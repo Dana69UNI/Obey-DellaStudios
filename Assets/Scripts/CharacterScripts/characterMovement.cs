@@ -8,10 +8,11 @@ public class characterMovement : MonoBehaviour
 {
     public UserInput userInput;
     private Rigidbody rb;
-    private float movementForce = 1f;
-    private float maxSpeed = 5f;
+    public float movementForce = 1f;
+    private float maxSpeed = 6f;
+    public InputActionReference move;
     private Vector3 inputMovement = Vector3.zero;
-    private Camera playerCamera;
+    public Camera playerCamera;
 
     private void Awake()
     {
@@ -19,15 +20,33 @@ public class characterMovement : MonoBehaviour
         userInput = new UserInput();
     }
 
-    public void OnMovement(InputAction.CallbackContext value)
+    public void OnMovement()
     {
-      
-        //inputMovement += value.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
-        //inputMovement += value.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
-        //rb.AddForce(inputMovement, ForceMode.Impulse);
-        //inputMovement = Vector3.zero;
+        Debug.Log("AAAAAA");
+        inputMovement += move.action.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
+        inputMovement += move.action.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
+        if (inputMovement.x > maxSpeed)
+        {
+            inputMovement.x = maxSpeed;
+        }
+        if (inputMovement.z > maxSpeed)
+        {
+            inputMovement.z = maxSpeed;
+        }
+        if (inputMovement.y > maxSpeed)
+        {
+            inputMovement.y = maxSpeed;
+        }
+
+        rb.AddForce(inputMovement, ForceMode.Impulse);
+        inputMovement = Vector3.zero;
     }
 
+    private void FixedUpdate()
+    {
+        OnMovement();
+        
+    }
 
     private Vector3 GetCameraRight(Camera playerCamera)
     {
