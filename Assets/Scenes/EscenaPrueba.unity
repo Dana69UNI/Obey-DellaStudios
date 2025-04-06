@@ -227,7 +227,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -242,8 +242,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 200
-    positionDamper: 40.45
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -351,9 +351,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -376,11 +376,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 20
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 20
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -405,7 +405,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -420,8 +420,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 1000
-    positionDamper: 10
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -666,9 +666,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -691,11 +691,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 50.9
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 83.81
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -720,7 +720,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -735,8 +735,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 30
-    positionDamper: 6
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -770,9 +770,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.00352635
-  m_Height: 0.011866707
+  m_Height: 0.013847142
   m_Direction: 1
-  m_Center: {x: -0.0014736167, y: 0.0078114048, z: -0.000000004131537}
+  m_Center: {x: -0.0014735988, y: 0.006821132, z: -0.0000000036477554}
 --- !u!114 &424058074
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -811,9 +811,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -836,11 +836,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 30
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 5
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -865,7 +865,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -880,8 +880,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 15
-    positionDamper: 6
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -995,9 +995,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -1020,11 +1020,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -1049,7 +1049,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -1064,7 +1064,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 100
+    positionSpring: 0
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -1165,9 +1165,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -1190,11 +1190,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 10
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -1219,7 +1219,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -1234,8 +1234,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 1000
-    positionDamper: 10
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -1484,9 +1484,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -1509,11 +1509,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 30
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 5
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -1538,7 +1538,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -1553,8 +1553,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 15
-    positionDamper: 6
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -1833,9 +1833,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 0
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -1858,11 +1858,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 20
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 20
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -1887,7 +1887,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -1902,7 +1902,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 100
+    positionSpring: 0
     positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
@@ -2005,9 +2005,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -2019,22 +2019,22 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_LowAngularXLimit:
-    limit: 0
+    limit: -66.72
     bounciness: 0
     contactDistance: 0
   m_HighAngularXLimit:
-    limit: 0
+    limit: 32
     bounciness: 0
     contactDistance: 0
   m_AngularYZLimitSpring:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 15
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 18
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -2059,7 +2059,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -2074,8 +2074,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 300
-    positionDamper: 129.33
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -2343,17 +2343,17 @@ PrefabInstance:
     - target: {fileID: 7642453039074632503, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.00483
+      value: -0.00589
       objectReference: {fileID: 0}
     - target: {fileID: 7642453039074632503, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.01534
+      value: 0.01506
       objectReference: {fileID: 0}
     - target: {fileID: 7642453039074632503, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.00622
+      value: -0.00551
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -2964,6 +2964,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   movementForce: 10
+  maxSpeed: 12
   move: {fileID: 2031438317623594684, guid: f575466e47e726b438ad2f9726418134, type: 3}
   playerCamera: {fileID: 397060782}
 --- !u!1 &2077018116
@@ -3179,9 +3180,9 @@ ConfigurableJoint:
   m_XMotion: 0
   m_YMotion: 0
   m_ZMotion: 0
-  m_AngularXMotion: 2
-  m_AngularYMotion: 2
-  m_AngularZMotion: 2
+  m_AngularXMotion: 1
+  m_AngularYMotion: 1
+  m_AngularZMotion: 1
   m_LinearLimitSpring:
     spring: 0
     damper: 0
@@ -3204,11 +3205,11 @@ ConfigurableJoint:
     spring: 0
     damper: 0
   m_AngularYLimit:
-    limit: 0
+    limit: 19.69
     bounciness: 0
     contactDistance: 0
   m_AngularZLimit:
-    limit: 0
+    limit: 69.19
     bounciness: 0
     contactDistance: 0
   m_TargetPosition: {x: 0, y: 0, z: 0}
@@ -3233,7 +3234,7 @@ ConfigurableJoint:
     useAcceleration: 0
   m_TargetRotation: {x: 0, y: 0, z: 0, w: 1}
   m_TargetAngularVelocity: {x: 0, y: 0, z: 0}
-  m_RotationDriveMode: 1
+  m_RotationDriveMode: 0
   m_AngularXDrive:
     serializedVersion: 4
     positionSpring: 0
@@ -3248,8 +3249,8 @@ ConfigurableJoint:
     useAcceleration: 0
   m_SlerpDrive:
     serializedVersion: 4
-    positionSpring: 30
-    positionDamper: 6
+    positionSpring: 0
+    positionDamper: 0
     maximumForce: 3.4028233e+38
     useAcceleration: 0
   m_ProjectionMode: 0
@@ -3283,9 +3284,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.0028649683
-  m_Height: 0.011866706
+  m_Height: 0.01451375
   m_Direction: 1
-  m_Center: {x: 0.0005209813, y: 0.0078114043, z: -0.0000000045374398}
+  m_Center: {x: 0.00052098057, y: 0.0064878818, z: -0.000000005040066}
 --- !u!114 &2118973544
 MonoBehaviour:
   m_ObjectHideFlags: 0

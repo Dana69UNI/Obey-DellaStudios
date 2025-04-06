@@ -10,7 +10,7 @@ public class characterMovement : MonoBehaviour
     public UserInput userInput;
     private Rigidbody rb;
     public float movementForce = 1f;
-    private float maxSpeed = 6f;
+    public float maxSpeed = 6f;
     public InputActionReference move;
     private Vector3 inputMovement = Vector3.zero;
     public Camera playerCamera;
