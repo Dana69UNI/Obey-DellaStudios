@@ -6,6 +6,7 @@ using UnityEngine.InputSystem;
 
 public class characterMovement : MonoBehaviour
 {
+   
     public UserInput userInput;
     private Rigidbody rb;
     public float movementForce = 1f;
@@ -22,7 +23,7 @@ public class characterMovement : MonoBehaviour
 
     public void OnMovement()
     {
-        Debug.Log("AAAAAA");
+     
         inputMovement += move.action.ReadValue<Vector2>().x * GetCameraRight(playerCamera) * movementForce;
         inputMovement += move.action.ReadValue<Vector2>().y * GetCameraForward(playerCamera) * movementForce;
         if (inputMovement.x > maxSpeed)
