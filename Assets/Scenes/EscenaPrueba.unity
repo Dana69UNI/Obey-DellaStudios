@@ -501,8 +501,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 240584347}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.0293013, y: 0.22053598, z: 0.004619276, w: 0.9749277}
-  m_LocalPosition: {x: 1.5613084, y: 2.8863358, z: 3.0239744}
+  m_LocalRotation: {x: -0.0293013, y: 0.220536, z: 0.004619276, w: 0.9749277}
+  m_LocalPosition: {x: 1.5613083, y: 2.8863358, z: 3.023974}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -646,6 +646,7 @@ GameObject:
   - component: {fileID: 397060782}
   - component: {fileID: 397060781}
   - component: {fileID: 397060784}
+  - component: {fileID: 397060785}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -720,12 +721,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 397060780}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.008404933, y: 0.18827459, z: 0.0016113117, w: 0.9820792}
-  m_LocalPosition: {x: -1.89, y: 3.56, z: -5.1}
+  m_LocalRotation: {x: -0.008404931, y: 0.18827456, z: 0.0016113116, w: 0.98207915}
+  m_LocalPosition: {x: -1.8799994, y: -1.1799998, z: -13.540001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1799932729}
   m_LocalEulerAnglesHint: {x: 22.964, y: 365.954, z: -2.521}
 --- !u!114 &397060784
 MonoBehaviour:
@@ -771,6 +772,27 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!114 &397060785
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 397060780}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b1453ae05ea1d94d9548dc2cbd4637a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 2011810794}
+  offset: {x: 0, y: 3, z: -6}
+  distance: 10
+  sensitivity: 1
+  rotationSmoothTime: 0.12
+  minVerticalAngle: -27
+  maxVerticalAngle: 90
+  lookInput: {fileID: -4251224489678763666, guid: f575466e47e726b438ad2f9726418134,
+    type: 3}
 --- !u!1 &424058068 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -146485916705769112, guid: 9a25ac6c98f9bca4095a9196622fade4,
@@ -2155,7 +2177,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0008127018, y: 1.2586983, z: -0.19395399}
+  m_ConnectedAnchor: {x: -0.0008127018, y: 0.51869833, z: -0.19395399}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -2780,12 +2802,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1799932728}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -1.1641531e-10, w: 1}
-  m_LocalPosition: {x: -0.010000229, y: 4.74, z: 8.440001}
+  m_LocalRotation: {x: -0, y: -0, z: -1.1641532e-10, w: 1}
+  m_LocalPosition: {x: -0.0100005865, y: 4.74, z: 8.440001}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 2059912539}
+  m_Children:
+  - {fileID: 397060783}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!145 &1799932730
 SpringJoint:
@@ -2880,7 +2903,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.0003852635, y: 0.018413607, z: 0.00063003966}
+  m_ConnectedAnchor: {x: -0.00038526338, y: 0.018413605, z: 0.00063003943}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3032,6 +3055,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1992186462}
   joint: {fileID: 2011810789}
+--- !u!4 &2011810794 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4150500537516903163, guid: 9a25ac6c98f9bca4095a9196622fade4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656794307}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2059912535
 GameObject:
   m_ObjectHideFlags: 0
@@ -3217,7 +3246,6 @@ Transform:
   - {fileID: 1183208027}
   - {fileID: 2077018117}
   - {fileID: 240584348}
-  - {fileID: 1799932729}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2077018116
@@ -3427,7 +3455,7 @@ ConfigurableJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: 1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.004050002, y: 0.01543, z: 0.0056499997}
+  m_ConnectedAnchor: {x: 0.004050002, y: 0.015430002, z: 0.0056499997}
   serializedVersion: 3
   m_SecondaryAxis: {x: 0, y: 1, z: 0}
   m_XMotion: 0
@@ -3559,7 +3587,7 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 2113963255}
-  - {fileID: 397060783}
+  - {fileID: 1799932729}
   - {fileID: 2059912539}
   - {fileID: 1281435335}
   - {fileID: 1575216620}
