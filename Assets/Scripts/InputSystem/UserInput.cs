@@ -71,6 +71,15 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Look"",
+                    ""type"": ""Value"",
+                    ""id"": ""e064fd88-38f9-4f80-b48d-dc91cec43cfa"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -271,6 +280,61 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""action"": ""GrabRightRelease"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""2D Vector"",
+                    ""id"": ""0502ee47-9c0c-40ac-8bac-6d8e40f4b1bc"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""11817ed8-99a8-48dc-a03c-4faa51d495d9"",
+                    ""path"": ""<Mouse>/delta/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""d0a0e7af-1a69-48cc-b6ae-05e79125124b"",
+                    ""path"": ""<Mouse>/delta/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""3bb583d6-a670-40eb-a90f-9346b19b7edd"",
+                    ""path"": ""<Mouse>/delta/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""91b352ec-65e0-489f-8270-cc8c51c1988f"",
+                    ""path"": ""<Mouse>/delta/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Look"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
                 }
             ]
         }
@@ -284,6 +348,7 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         m_Character_GrabLeftRelease = m_Character.FindAction("GrabLeftRelease", throwIfNotFound: true);
         m_Character_GrabRightPress = m_Character.FindAction("GrabRightPress", throwIfNotFound: true);
         m_Character_GrabRightRelease = m_Character.FindAction("GrabRightRelease", throwIfNotFound: true);
+        m_Character_Look = m_Character.FindAction("Look", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -350,6 +415,7 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Character_GrabLeftRelease;
     private readonly InputAction m_Character_GrabRightPress;
     private readonly InputAction m_Character_GrabRightRelease;
+    private readonly InputAction m_Character_Look;
     public struct CharacterActions
     {
         private @UserInput m_Wrapper;
@@ -359,6 +425,7 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         public InputAction @GrabLeftRelease => m_Wrapper.m_Character_GrabLeftRelease;
         public InputAction @GrabRightPress => m_Wrapper.m_Character_GrabRightPress;
         public InputAction @GrabRightRelease => m_Wrapper.m_Character_GrabRightRelease;
+        public InputAction @Look => m_Wrapper.m_Character_Look;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -383,6 +450,9 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @GrabRightRelease.started += instance.OnGrabRightRelease;
             @GrabRightRelease.performed += instance.OnGrabRightRelease;
             @GrabRightRelease.canceled += instance.OnGrabRightRelease;
+            @Look.started += instance.OnLook;
+            @Look.performed += instance.OnLook;
+            @Look.canceled += instance.OnLook;
         }
 
         private void UnregisterCallbacks(ICharacterActions instance)
@@ -402,6 +472,9 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @GrabRightRelease.started -= instance.OnGrabRightRelease;
             @GrabRightRelease.performed -= instance.OnGrabRightRelease;
             @GrabRightRelease.canceled -= instance.OnGrabRightRelease;
+            @Look.started -= instance.OnLook;
+            @Look.performed -= instance.OnLook;
+            @Look.canceled -= instance.OnLook;
         }
 
         public void RemoveCallbacks(ICharacterActions instance)
@@ -426,5 +499,6 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         void OnGrabLeftRelease(InputAction.CallbackContext context);
         void OnGrabRightPress(InputAction.CallbackContext context);
         void OnGrabRightRelease(InputAction.CallbackContext context);
+        void OnLook(InputAction.CallbackContext context);
     }
 }
