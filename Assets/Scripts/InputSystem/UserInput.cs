@@ -35,6 +35,42 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""GrabLeftPress"",
+                    ""type"": ""Button"",
+                    ""id"": ""2ed72995-c232-4b77-a115-cdfc1e896cd7"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GrabLeftRelease"",
+                    ""type"": ""Button"",
+                    ""id"": ""d6052208-d5ee-4d40-8ec7-b1e69f2074e5"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GrabRightPress"",
+                    ""type"": ""Button"",
+                    ""id"": ""53c820cb-2e6f-4d36-a28d-4677edae5904"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""GrabRightRelease"",
+                    ""type"": ""Button"",
+                    ""id"": ""fffec3c0-df53-4514-9a40-6217b68e18c0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -147,6 +183,94 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""action"": ""Movement"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""67bbb1d0-b3b5-4bd8-84b0-79ddbe24cd93"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press(pressPoint=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabLeftPress"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ddf1ae8d-5ee8-4d6d-8ce7-7528ac090469"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": ""Press(pressPoint=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabLeftPress"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""958b614b-fb4d-4c3b-839b-5df9e1c2e713"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": ""Press(pressPoint=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabRightPress"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""26924341-f12f-45b3-af08-d30c3d8398c2"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": ""Press(pressPoint=0.5)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabRightPress"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""3499acd0-f357-43d7-93bb-7f17df0da61b"",
+                    ""path"": ""<Mouse>/leftButton"",
+                    ""interactions"": ""Press(pressPoint=0.5,behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabLeftRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""52345615-c42b-46d0-8d52-a1907f9362bb"",
+                    ""path"": ""<Gamepad>/leftTrigger"",
+                    ""interactions"": ""Press(pressPoint=0.5,behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabLeftRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""9c9652df-05ec-41a2-9f20-1d6e26b80bfb"",
+                    ""path"": ""<Mouse>/rightButton"",
+                    ""interactions"": ""Press(pressPoint=0.5,behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabRightRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""ac4f1689-b393-47f2-80d6-ec8f7c7ef2ad"",
+                    ""path"": ""<Gamepad>/rightTrigger"",
+                    ""interactions"": ""Press(pressPoint=0.5,behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""GrabRightRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -156,6 +280,10 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         // Character
         m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
+        m_Character_GrabLeftPress = m_Character.FindAction("GrabLeftPress", throwIfNotFound: true);
+        m_Character_GrabLeftRelease = m_Character.FindAction("GrabLeftRelease", throwIfNotFound: true);
+        m_Character_GrabRightPress = m_Character.FindAction("GrabRightPress", throwIfNotFound: true);
+        m_Character_GrabRightRelease = m_Character.FindAction("GrabRightRelease", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -218,11 +346,19 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Character;
     private List<ICharacterActions> m_CharacterActionsCallbackInterfaces = new List<ICharacterActions>();
     private readonly InputAction m_Character_Movement;
+    private readonly InputAction m_Character_GrabLeftPress;
+    private readonly InputAction m_Character_GrabLeftRelease;
+    private readonly InputAction m_Character_GrabRightPress;
+    private readonly InputAction m_Character_GrabRightRelease;
     public struct CharacterActions
     {
         private @UserInput m_Wrapper;
         public CharacterActions(@UserInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Character_Movement;
+        public InputAction @GrabLeftPress => m_Wrapper.m_Character_GrabLeftPress;
+        public InputAction @GrabLeftRelease => m_Wrapper.m_Character_GrabLeftRelease;
+        public InputAction @GrabRightPress => m_Wrapper.m_Character_GrabRightPress;
+        public InputAction @GrabRightRelease => m_Wrapper.m_Character_GrabRightRelease;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -235,6 +371,18 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
+            @GrabLeftPress.started += instance.OnGrabLeftPress;
+            @GrabLeftPress.performed += instance.OnGrabLeftPress;
+            @GrabLeftPress.canceled += instance.OnGrabLeftPress;
+            @GrabLeftRelease.started += instance.OnGrabLeftRelease;
+            @GrabLeftRelease.performed += instance.OnGrabLeftRelease;
+            @GrabLeftRelease.canceled += instance.OnGrabLeftRelease;
+            @GrabRightPress.started += instance.OnGrabRightPress;
+            @GrabRightPress.performed += instance.OnGrabRightPress;
+            @GrabRightPress.canceled += instance.OnGrabRightPress;
+            @GrabRightRelease.started += instance.OnGrabRightRelease;
+            @GrabRightRelease.performed += instance.OnGrabRightRelease;
+            @GrabRightRelease.canceled += instance.OnGrabRightRelease;
         }
 
         private void UnregisterCallbacks(ICharacterActions instance)
@@ -242,6 +390,18 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
+            @GrabLeftPress.started -= instance.OnGrabLeftPress;
+            @GrabLeftPress.performed -= instance.OnGrabLeftPress;
+            @GrabLeftPress.canceled -= instance.OnGrabLeftPress;
+            @GrabLeftRelease.started -= instance.OnGrabLeftRelease;
+            @GrabLeftRelease.performed -= instance.OnGrabLeftRelease;
+            @GrabLeftRelease.canceled -= instance.OnGrabLeftRelease;
+            @GrabRightPress.started -= instance.OnGrabRightPress;
+            @GrabRightPress.performed -= instance.OnGrabRightPress;
+            @GrabRightPress.canceled -= instance.OnGrabRightPress;
+            @GrabRightRelease.started -= instance.OnGrabRightRelease;
+            @GrabRightRelease.performed -= instance.OnGrabRightRelease;
+            @GrabRightRelease.canceled -= instance.OnGrabRightRelease;
         }
 
         public void RemoveCallbacks(ICharacterActions instance)
@@ -262,5 +422,9 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     public interface ICharacterActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnGrabLeftPress(InputAction.CallbackContext context);
+        void OnGrabLeftRelease(InputAction.CallbackContext context);
+        void OnGrabRightPress(InputAction.CallbackContext context);
+        void OnGrabRightRelease(InputAction.CallbackContext context);
     }
 }
