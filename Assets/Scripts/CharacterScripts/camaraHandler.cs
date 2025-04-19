@@ -7,7 +7,7 @@ public class ThirdPersonCamera : MonoBehaviour
     public Vector3 offset = new Vector3(0f, 3f, -6f);
     public float distance = 6f;
 
-    [Header("Rotation Settings")]
+    [Header("Rotation")]
     public float sensitivity = 2f;
     public float rotationSmoothTime = 0.12f;
     public float minVerticalAngle = -27f; //luego se ajustan bien estos valores en el inspector
