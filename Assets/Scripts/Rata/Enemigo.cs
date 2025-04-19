@@ -14,6 +14,9 @@ public class Enemigo : MonoBehaviour
     private Vector3 targetPosition;
     private Transform player;
 
+    private bool investigandoRuido = false;
+    private Vector3 posicionRuido;
+
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -22,10 +25,14 @@ public class Enemigo : MonoBehaviour
 
     void Update()
     {
+        // Si ha llegado a su destino y no está haciendo otra cosa, buscar nueva posición
+        if (!investigandoRuido && Vector3.Distance(transform.position, targetPosition) < 0.2f)
+        {
+            NuevaPosicion();
+        }
+
         // Mira si el jugador está en la línea de visión
         Vector3 directionToPlayer = (player.position - transform.position).normalized;
-
-        // Raycast hacia el jugador
         Ray ray = new Ray(transform.position, directionToPlayer);
         RaycastHit hit;
 
@@ -39,7 +46,21 @@ public class Enemigo : MonoBehaviour
             }
         }
 
-        // Si no ve al jugador, patrulla
+        // Si está investigando un ruido
+        if (investigandoRuido)
+        {
+            MoverHacia(posicionRuido);
+
+            if (Vector3.Distance(transform.position, posicionRuido) < 0.5f)
+            {
+                investigandoRuido = false;
+                NuevaPosicion(); // vuelve a patrullar
+            }
+
+            return;
+        }
+
+        // Patrullaje normal
         Vector3 directionToTarget = (targetPosition - transform.position).normalized;
 
         if (Physics.Raycast(transform.position, directionToTarget, obstacleDetectionDistance, obstacleLayer))
@@ -49,11 +70,6 @@ public class Enemigo : MonoBehaviour
         else
         {
             MoverHacia(targetPosition);
-
-            if (Vector3.Distance(transform.position, targetPosition) < 0.2f)
-            {
-                NuevaPosicion();
-            }
         }
     }
 
@@ -65,13 +81,26 @@ public class Enemigo : MonoBehaviour
 
     void NuevaPosicion()
     {
-        Vector3 randomDirection = new Vector3(
-            Random.Range(-moveRadius, moveRadius),
-            0f,
-            Random.Range(-moveRadius, moveRadius)
-        );
+        Vector3 randomDirection;
+        float distanciaMinima = 2f;
+
+        do
+        {
+            randomDirection = new Vector3(
+                Random.Range(-moveRadius, moveRadius),
+                0f,
+                Random.Range(-moveRadius, moveRadius)
+            );
+        }
+        while (randomDirection.magnitude < distanciaMinima);
 
         targetPosition = transform.position + randomDirection;
         targetPosition.y = transform.position.y;
+    }
+
+    public void EscucharRuido(Vector3 posicion)
+    {
+        posicionRuido = posicion;
+        investigandoRuido = true;
     }
 }
