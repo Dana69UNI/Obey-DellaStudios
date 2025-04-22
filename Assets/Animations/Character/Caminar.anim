@@ -1020,7 +1020,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Armature/EspinaBaja/Femur.L
+    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1032,7 +1032,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Armature/EspinaBaja/Femur.L
+    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1044,7 +1044,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Armature/EspinaBaja/Femur.L
+    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1092,7 +1092,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
+    path: Armature/EspinaBaja/Femur.L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1104,7 +1104,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
+    path: Armature/EspinaBaja/Femur.L
     classID: 4
     script: {fileID: 0}
     flags: 0
@@ -1116,7 +1116,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Armature/EspinaBaja/Femur.R/Tibia.003.R
+    path: Armature/EspinaBaja/Femur.L
     classID: 4
     script: {fileID: 0}
     flags: 0
