@@ -13,6 +13,8 @@ public class characterMovement : MonoBehaviour
     public float maxSpeed = 6f;
     public InputActionReference move;
     private Vector3 inputMovement = Vector3.zero;
+    private Vector3 LastinputMovement;
+    float stopMult = 0.6f;
     public Camera playerCamera;
 
     private void Awake()
@@ -39,7 +41,8 @@ public class characterMovement : MonoBehaviour
             inputMovement.y = maxSpeed;
         }
 
-        rb.AddForce(inputMovement, ForceMode.Impulse);
+        rb.AddForce(inputMovement.normalized, ForceMode.Impulse);
+        LastinputMovement=inputMovement;
         inputMovement = Vector3.zero;
     }
 
@@ -47,6 +50,11 @@ public class characterMovement : MonoBehaviour
     {
         OnMovement();
         
+    }
+
+    void OnMovementRelease()
+    {
+        rb.AddForce(-LastinputMovement.normalized * stopMult, ForceMode.Impulse);
     }
 
     private Vector3 GetCameraRight(Camera playerCamera)
