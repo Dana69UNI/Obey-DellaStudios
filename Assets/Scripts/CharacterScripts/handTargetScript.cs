@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GrabScript : MonoBehaviour
+public class handTargetScript : MonoBehaviour
 {
     [field: Header("SpringJoint AntebrazoDerecho")]
     [field: SerializeField] public SpringJoint jointR { get; private set; }
