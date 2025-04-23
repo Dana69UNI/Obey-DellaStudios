@@ -85,6 +85,6 @@ public class characterMovement : MonoBehaviour
     {
         RaycastHit hit;
         Physics.Raycast(groundedRayLeft.transform.position, Vector3.down, out hit);
-        Debug.Log(hit.);
+        Debug.Log(hit);
     }
 }
