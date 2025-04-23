@@ -16,7 +16,7 @@ public class handTargetScript : MonoBehaviour
         if(jointL != null)
         {
             //Debug.Log("ando agarrando");
-            jointL.spring = 11;
+            jointL.spring = 6;
         }
     }
 
@@ -34,7 +34,7 @@ public class handTargetScript : MonoBehaviour
         if (jointR != null)
         {
             //Debug.Log("ando agarrando");
-            jointR.spring = 11;
+            jointR.spring = 6;
         }
     }
 

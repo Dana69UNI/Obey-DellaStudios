@@ -7,7 +7,8 @@ public class grabSystemHandler : MonoBehaviour
 {
     bool LeftHand=false;
     bool RightHand = false;
-    bool Grabbing = false;
+   public bool Grabbing = false;
+    public bool objGrab = false;
     Rigidbody HandRB;
     Rigidbody otherBody;
     FixedJoint joint;
@@ -69,20 +70,20 @@ public class grabSystemHandler : MonoBehaviour
             joint.enablePreprocessing = false;
             joint.massScale = 1f;
             joint.connectedMassScale = 1f;
-
+            objGrab = true;
         }
     }
 
     void DestroyJoints()
     {
         Destroy(HandRB.GetComponent<FixedJoint>());
+        objGrab = false;
     }
 
     private void OnTriggerStay(Collider other)
     {
         if (Grabbing)
         {
-            Debug.Log("llegue");
             otherBody = other.GetComponent<Rigidbody>();
             CreateFixedJoint(otherBody);
         }

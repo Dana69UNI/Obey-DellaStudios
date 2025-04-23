@@ -89,6 +89,24 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""375e0d37-80d4-4bde-9d35-7a19e392cbe0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Trepar"",
+                    ""type"": ""Button"",
+                    ""id"": ""c02b878d-5a86-451f-b40d-1b89fb5d9ca2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold(duration=0.4)"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -509,6 +527,50 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""action"": ""MovementRelease"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94eaab43-f2be-4848-b48f-cf1eb389b7ec"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""138cabe3-18e3-4a25-ad4e-3468d85cd409"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8892c1a8-35c3-4861-b624-08e84e19c1bc"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Trepar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8698fcd3-2c74-4450-b663-81d0cc675945"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Trepar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -524,6 +586,8 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         m_Character_GrabRightPress = m_Character.FindAction("GrabRightPress", throwIfNotFound: true);
         m_Character_GrabRightRelease = m_Character.FindAction("GrabRightRelease", throwIfNotFound: true);
         m_Character_Look = m_Character.FindAction("Look", throwIfNotFound: true);
+        m_Character_Jump = m_Character.FindAction("Jump", throwIfNotFound: true);
+        m_Character_Trepar = m_Character.FindAction("Trepar", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -592,6 +656,8 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_Character_GrabRightPress;
     private readonly InputAction m_Character_GrabRightRelease;
     private readonly InputAction m_Character_Look;
+    private readonly InputAction m_Character_Jump;
+    private readonly InputAction m_Character_Trepar;
     public struct CharacterActions
     {
         private @UserInput m_Wrapper;
@@ -603,6 +669,8 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         public InputAction @GrabRightPress => m_Wrapper.m_Character_GrabRightPress;
         public InputAction @GrabRightRelease => m_Wrapper.m_Character_GrabRightRelease;
         public InputAction @Look => m_Wrapper.m_Character_Look;
+        public InputAction @Jump => m_Wrapper.m_Character_Jump;
+        public InputAction @Trepar => m_Wrapper.m_Character_Trepar;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -633,6 +701,12 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
+            @Trepar.started += instance.OnTrepar;
+            @Trepar.performed += instance.OnTrepar;
+            @Trepar.canceled += instance.OnTrepar;
         }
 
         private void UnregisterCallbacks(ICharacterActions instance)
@@ -658,6 +732,12 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
+            @Trepar.started -= instance.OnTrepar;
+            @Trepar.performed -= instance.OnTrepar;
+            @Trepar.canceled -= instance.OnTrepar;
         }
 
         public void RemoveCallbacks(ICharacterActions instance)
@@ -684,5 +764,7 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         void OnGrabRightPress(InputAction.CallbackContext context);
         void OnGrabRightRelease(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnTrepar(InputAction.CallbackContext context);
     }
 }
