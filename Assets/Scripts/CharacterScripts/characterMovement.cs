@@ -16,6 +16,16 @@ public class characterMovement : MonoBehaviour
     private Vector3 LastinputMovement;
     float stopMult = 0.6f;
     public Camera playerCamera;
+    bool isGrounded;
+    float distToGround;
+
+    [field: Header("GroundedRaycast Right")]
+    [field: SerializeField] public Transform groundedRayRight { get; private set; }
+
+
+    [field: Header("GroundedRaycast Left")]
+    [field: SerializeField] public Transform groundedRayLeft { get; private set; }
+
 
     private void Awake()
     {
@@ -49,7 +59,7 @@ public class characterMovement : MonoBehaviour
     private void FixedUpdate()
     {
         OnMovement();
-        
+        isGroundedCheck();
     }
 
     void OnMovementRelease()
@@ -69,5 +79,12 @@ public class characterMovement : MonoBehaviour
         Vector3 forward = playerCamera.transform.forward;
         forward.y = 0f;
         return forward.normalized;
+    }
+
+    private void isGroundedCheck()
+    {
+        RaycastHit hit;
+        Physics.Raycast(groundedRayLeft.transform.position, Vector3.down, out hit);
+        Debug.Log(hit.);
     }
 }

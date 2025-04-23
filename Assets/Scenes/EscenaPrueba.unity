@@ -136,7 +136,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5302390}
   serializedVersion: 4
-  m_Mass: 0.8
+  m_Mass: 30
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -666,6 +666,12 @@ MonoBehaviour:
 --- !u!4 &302894100 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 9a25ac6c98f9bca4095a9196622fade4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656794307}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &305737204 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8457738986932155766, guid: 9a25ac6c98f9bca4095a9196622fade4,
     type: 3}
   m_PrefabInstance: {fileID: 1656794307}
   m_PrefabAsset: {fileID: 0}
@@ -1497,6 +1503,12 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4112009695408070015, guid: 9a25ac6c98f9bca4095a9196622fade4,
     type: 3}
   m_PrefabInstance: {fileID: 903141972}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &736171183 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2576408879331154568, guid: 9a25ac6c98f9bca4095a9196622fade4,
+    type: 3}
+  m_PrefabInstance: {fileID: 1656794307}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &766209589 stripped
 GameObject:
@@ -2944,7 +2956,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532782013}
   serializedVersion: 4
-  m_Mass: 10.12
+  m_Mass: 40
   m_Drag: 0
   m_AngularDrag: 0.05
   m_CenterOfMass: {x: 0, y: 0, z: 0}
@@ -3100,22 +3112,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 1131496930}
   joint: {fileID: 1532782016}
---- !u!114 &1532782021
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1532782013}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a50549d5b6e4df74c8042cec937ca69e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  movementForce: 2.2
-  maxSpeed: 4
-  move: {fileID: 2031438317623594684, guid: f575466e47e726b438ad2f9726418134, type: 3}
-  playerCamera: {fileID: 397060782}
 --- !u!114 &1532782022
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3410,6 +3406,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 443683183615955543, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
+      propertyPath: m_Name
+      value: RaycastGroundedL
+      objectReference: {fileID: 0}
+    - target: {fileID: 443683183615955543, guid: 9a25ac6c98f9bca4095a9196622fade4,
+        type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -3465,6 +3466,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7617425014428220470, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
+      propertyPath: m_Name
+      value: RaycastGroundedR
+      objectReference: {fileID: 0}
+    - target: {fileID: 7617425014428220470, guid: 9a25ac6c98f9bca4095a9196622fade4,
+        type: 3}
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
@@ -3509,10 +3515,6 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1532782022}
-    - targetCorrespondingSourceObject: {fileID: -7707769222581500372, guid: 9a25ac6c98f9bca4095a9196622fade4,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1532782021}
     - targetCorrespondingSourceObject: {fileID: -865754469631036105, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
       insertIndex: -1
@@ -4094,6 +4096,8 @@ MonoBehaviour:
   maxSpeed: 3
   move: {fileID: 2031438317623594684, guid: f575466e47e726b438ad2f9726418134, type: 3}
   playerCamera: {fileID: 397060782}
+  <groundedRayRight>k__BackingField: {fileID: 736171183}
+  <groundedRayLeft>k__BackingField: {fileID: 305737204}
 --- !u!1 &2077018116
 GameObject:
   m_ObjectHideFlags: 0
