@@ -29,12 +29,13 @@ public class AnimationScript : MonoBehaviour
     private IEnumerator jumpCD()
     {
         
-        while (jumpTimer < 1f)
+        while (jumpTimer < 0.5f)
         {
             _animator.SetBool("IsJumping", true);
             jumpTimer += Time.deltaTime;
             yield return null;
         }
+        jumpTimer = 0f;
         _animator.SetBool("IsJumping", false);
     }
 }
