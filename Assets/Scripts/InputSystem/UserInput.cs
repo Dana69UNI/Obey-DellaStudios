@@ -37,6 +37,15 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""initialStateCheck"": true
                 },
                 {
+                    ""name"": ""MovementRelease"",
+                    ""type"": ""Value"",
+                    ""id"": ""338d25aa-3179-4967-8a11-f82af3c63132"",
+                    ""expectedControlType"": ""Vector2"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
+                },
+                {
                     ""name"": ""GrabLeftPress"",
                     ""type"": ""Button"",
                     ""id"": ""2ed72995-c232-4b77-a115-cdfc1e896cd7"",
@@ -80,6 +89,24 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Jump"",
+                    ""type"": ""Button"",
+                    ""id"": ""375e0d37-80d4-4bde-9d35-7a19e392cbe0"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Press"",
+                    ""initialStateCheck"": false
+                },
+                {
+                    ""name"": ""Trepar"",
+                    ""type"": ""Button"",
+                    ""id"": ""c02b878d-5a86-451f-b40d-1b89fb5d9ca2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": ""Hold(duration=0.4)"",
+                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
@@ -390,6 +417,160 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
                     ""action"": ""Look"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""WASD"",
+                    ""id"": ""c663a3af-5b09-433c-b52b-1a8b2da65f61"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": ""Press(pressPoint=0.5,behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""825eb5b2-cc0b-489e-8888-f955e89e34ea"",
+                    ""path"": ""<Keyboard>/w"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""1b70f2f3-7fe8-4a64-8f40-ff77b6b907f6"",
+                    ""path"": ""<Keyboard>/s"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""018f5901-0b15-4b33-84ea-b1fc92edb22b"",
+                    ""path"": ""<Keyboard>/a"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""bb5269d0-f6f8-4b0d-9d85-615db2daaae2"",
+                    ""path"": ""<Keyboard>/d"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""Gamepad"",
+                    ""id"": ""d37a6149-2919-4a56-ba5c-fa199e11e92b"",
+                    ""path"": ""2DVector"",
+                    ""interactions"": ""Press(behavior=1)"",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": true,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": ""up"",
+                    ""id"": ""c6c5d2e0-56cd-47a4-bcbb-ee1024453964"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""down"",
+                    ""id"": ""6669a7b2-c9ce-4095-b466-5263cab5a93e"",
+                    ""path"": ""<Gamepad>/leftStick/down"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""left"",
+                    ""id"": ""860326b5-f286-47b0-9cd6-63861a9840ac"",
+                    ""path"": ""<Gamepad>/leftStick/left"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": ""right"",
+                    ""id"": ""9123a6d8-c1fb-4d90-bef9-62a1b0bb4a52"",
+                    ""path"": ""<Gamepad>/leftStick/right"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""MovementRelease"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": true
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""94eaab43-f2be-4848-b48f-cf1eb389b7ec"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""138cabe3-18e3-4a25-ad4e-3468d85cd409"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Jump"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8892c1a8-35c3-4861-b624-08e84e19c1bc"",
+                    ""path"": ""<Keyboard>/space"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Trepar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""8698fcd3-2c74-4450-b663-81d0cc675945"",
+                    ""path"": ""<Gamepad>/buttonSouth"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Trepar"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -399,11 +580,14 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
         // Character
         m_Character = asset.FindActionMap("Character", throwIfNotFound: true);
         m_Character_Movement = m_Character.FindAction("Movement", throwIfNotFound: true);
+        m_Character_MovementRelease = m_Character.FindAction("MovementRelease", throwIfNotFound: true);
         m_Character_GrabLeftPress = m_Character.FindAction("GrabLeftPress", throwIfNotFound: true);
         m_Character_GrabLeftRelease = m_Character.FindAction("GrabLeftRelease", throwIfNotFound: true);
         m_Character_GrabRightPress = m_Character.FindAction("GrabRightPress", throwIfNotFound: true);
         m_Character_GrabRightRelease = m_Character.FindAction("GrabRightRelease", throwIfNotFound: true);
         m_Character_Look = m_Character.FindAction("Look", throwIfNotFound: true);
+        m_Character_Jump = m_Character.FindAction("Jump", throwIfNotFound: true);
+        m_Character_Trepar = m_Character.FindAction("Trepar", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -466,21 +650,27 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Character;
     private List<ICharacterActions> m_CharacterActionsCallbackInterfaces = new List<ICharacterActions>();
     private readonly InputAction m_Character_Movement;
+    private readonly InputAction m_Character_MovementRelease;
     private readonly InputAction m_Character_GrabLeftPress;
     private readonly InputAction m_Character_GrabLeftRelease;
     private readonly InputAction m_Character_GrabRightPress;
     private readonly InputAction m_Character_GrabRightRelease;
     private readonly InputAction m_Character_Look;
+    private readonly InputAction m_Character_Jump;
+    private readonly InputAction m_Character_Trepar;
     public struct CharacterActions
     {
         private @UserInput m_Wrapper;
         public CharacterActions(@UserInput wrapper) { m_Wrapper = wrapper; }
         public InputAction @Movement => m_Wrapper.m_Character_Movement;
+        public InputAction @MovementRelease => m_Wrapper.m_Character_MovementRelease;
         public InputAction @GrabLeftPress => m_Wrapper.m_Character_GrabLeftPress;
         public InputAction @GrabLeftRelease => m_Wrapper.m_Character_GrabLeftRelease;
         public InputAction @GrabRightPress => m_Wrapper.m_Character_GrabRightPress;
         public InputAction @GrabRightRelease => m_Wrapper.m_Character_GrabRightRelease;
         public InputAction @Look => m_Wrapper.m_Character_Look;
+        public InputAction @Jump => m_Wrapper.m_Character_Jump;
+        public InputAction @Trepar => m_Wrapper.m_Character_Trepar;
         public InputActionMap Get() { return m_Wrapper.m_Character; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -493,6 +683,9 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Movement.started += instance.OnMovement;
             @Movement.performed += instance.OnMovement;
             @Movement.canceled += instance.OnMovement;
+            @MovementRelease.started += instance.OnMovementRelease;
+            @MovementRelease.performed += instance.OnMovementRelease;
+            @MovementRelease.canceled += instance.OnMovementRelease;
             @GrabLeftPress.started += instance.OnGrabLeftPress;
             @GrabLeftPress.performed += instance.OnGrabLeftPress;
             @GrabLeftPress.canceled += instance.OnGrabLeftPress;
@@ -508,6 +701,12 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Look.started += instance.OnLook;
             @Look.performed += instance.OnLook;
             @Look.canceled += instance.OnLook;
+            @Jump.started += instance.OnJump;
+            @Jump.performed += instance.OnJump;
+            @Jump.canceled += instance.OnJump;
+            @Trepar.started += instance.OnTrepar;
+            @Trepar.performed += instance.OnTrepar;
+            @Trepar.canceled += instance.OnTrepar;
         }
 
         private void UnregisterCallbacks(ICharacterActions instance)
@@ -515,6 +714,9 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Movement.started -= instance.OnMovement;
             @Movement.performed -= instance.OnMovement;
             @Movement.canceled -= instance.OnMovement;
+            @MovementRelease.started -= instance.OnMovementRelease;
+            @MovementRelease.performed -= instance.OnMovementRelease;
+            @MovementRelease.canceled -= instance.OnMovementRelease;
             @GrabLeftPress.started -= instance.OnGrabLeftPress;
             @GrabLeftPress.performed -= instance.OnGrabLeftPress;
             @GrabLeftPress.canceled -= instance.OnGrabLeftPress;
@@ -530,6 +732,12 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
             @Look.started -= instance.OnLook;
             @Look.performed -= instance.OnLook;
             @Look.canceled -= instance.OnLook;
+            @Jump.started -= instance.OnJump;
+            @Jump.performed -= instance.OnJump;
+            @Jump.canceled -= instance.OnJump;
+            @Trepar.started -= instance.OnTrepar;
+            @Trepar.performed -= instance.OnTrepar;
+            @Trepar.canceled -= instance.OnTrepar;
         }
 
         public void RemoveCallbacks(ICharacterActions instance)
@@ -550,10 +758,13 @@ public partial class @UserInput: IInputActionCollection2, IDisposable
     public interface ICharacterActions
     {
         void OnMovement(InputAction.CallbackContext context);
+        void OnMovementRelease(InputAction.CallbackContext context);
         void OnGrabLeftPress(InputAction.CallbackContext context);
         void OnGrabLeftRelease(InputAction.CallbackContext context);
         void OnGrabRightPress(InputAction.CallbackContext context);
         void OnGrabRightRelease(InputAction.CallbackContext context);
         void OnLook(InputAction.CallbackContext context);
+        void OnJump(InputAction.CallbackContext context);
+        void OnTrepar(InputAction.CallbackContext context);
     }
 }

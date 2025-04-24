@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class GrabScript : MonoBehaviour
+public class handTargetScript : MonoBehaviour
 {
     [field: Header("SpringJoint AntebrazoDerecho")]
     [field: SerializeField] public SpringJoint jointR { get; private set; }
@@ -16,7 +16,7 @@ public class GrabScript : MonoBehaviour
         if(jointL != null)
         {
             //Debug.Log("ando agarrando");
-            jointL.spring = 4;
+            jointL.spring = 6;
         }
     }
 
@@ -34,7 +34,7 @@ public class GrabScript : MonoBehaviour
         if (jointR != null)
         {
             //Debug.Log("ando agarrando");
-            jointR.spring = 4;
+            jointR.spring = 6;
         }
     }
 
