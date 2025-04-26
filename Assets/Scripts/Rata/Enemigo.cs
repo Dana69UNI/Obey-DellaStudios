@@ -6,7 +6,7 @@ public class Enemigo : MonoBehaviour
 {
     public float moveRadius = 10f;
     public float speed = 3f;
-    public float obstacleDetectionDistance = 1f;
+    public float obstacleDetectionDistance = 2f;
     public LayerMask obstacleLayer; // para paredes
     public LayerMask playerLayer;   // para detectar al jugador
     public float visionDistance = 10f; // hasta dónde puede "ver" al jugador
