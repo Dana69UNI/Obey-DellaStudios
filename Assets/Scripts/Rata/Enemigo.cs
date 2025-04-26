@@ -100,20 +100,6 @@ public class Enemigo : MonoBehaviour
 
     public void EscucharRuido(Vector3 posicion)
     {
-        //Vector3 direccionAlRuido = (posicion - transform.position).normalized;
-        //float distanciaAlRuido = Vector3.Distance(transform.position, posicion);
-
-        //RaycastHit hit;
-        //if (Physics.Raycast(transform.position, direccionAlRuido, out hit, distanciaAlRuido))
-        //{
-        //    // Si el raycast golpea algo...
-        //    if (((1 << hit.collider.gameObject.layer) & obstacleLayer) != 0)
-        //    {
-        //        // ...y es un obstáculo, NO escucha el ruido
-        //        return;
-        //    }
-        //}
-
         posicionRuido = posicion;
         investigandoRuido = true;
     }
@@ -122,26 +108,16 @@ public class Enemigo : MonoBehaviour
 
 
 
+//Vector3 direccionAlRuido = (posicion - transform.position).normalized;
+//float distanciaAlRuido = Vector3.Distance(transform.position, posicion);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//RaycastHit hit;
+//if (Physics.Raycast(transform.position, direccionAlRuido, out hit, distanciaAlRuido))
+//{
+//    // Si el raycast golpea algo...
+//    if (((1 << hit.collider.gameObject.layer) & obstacleLayer) != 0)
+//    {
+//        // ...y es un obstáculo, NO escucha el ruido
+//        return;
+//    }
+//}
