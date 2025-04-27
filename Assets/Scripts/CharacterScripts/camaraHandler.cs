@@ -18,6 +18,10 @@ public class ThirdPersonCamera : MonoBehaviour
     private Vector2 currentRotation;
     private Vector2 rotationSmoothVelocity;
 
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     private void OnEnable()
     {
         if (lookInput != null)

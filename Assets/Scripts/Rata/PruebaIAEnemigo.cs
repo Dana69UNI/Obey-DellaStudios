@@ -11,28 +11,33 @@ public class PruebaIAEnemigo : MonoBehaviour
     public float wanderRadius = 20f;
     public float wanderTimer = 5f;
 
-    private float timer;
+    private float timer = 0;
 
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
-        timer = wanderTimer;
+        
     }
 
     private void Update()
     {
         timer += Time.deltaTime;
+        AiState();
+    }
+
+    private void AiState()
+    {
 
         float distanceToPlayer = Vector3.Distance(transform.position, player.position);
 
         if (distanceToPlayer <= detectionRadius)
         {
-            // Persigue al jugador
+
             agent.SetDestination(player.position);
         }
         else
         {
-            // Patrulla aleatoriamente
+
             if (timer >= wanderTimer)
             {
                 Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
