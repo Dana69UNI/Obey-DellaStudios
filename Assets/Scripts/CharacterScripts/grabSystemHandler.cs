@@ -10,6 +10,7 @@ public class grabSystemHandler : MonoBehaviour
    public bool Grabbing = false;
     public bool objGrab = false;
     Rigidbody HandRB;
+    GameObject otherGObj;
     Rigidbody otherBody;
     FixedJoint joint;
     void Start()
@@ -58,20 +59,24 @@ public class grabSystemHandler : MonoBehaviour
         }
 
     }
-    void CreateFixedJoint(Rigidbody obj)
+    void CreateFixedJoint(Rigidbody obj, GameObject otherGobj)
     {
-        if(!joint)
+        if(otherGObj.layer != LayerMask.NameToLayer("ExcludeCollisionChar"))
         {
-            joint = HandRB.gameObject.AddComponent<FixedJoint>();
-            joint.autoConfigureConnectedAnchor = true;
-            joint.connectedBody = obj;
-            joint.breakForce = 2000f;
-            joint.breakTorque = 2000f;
-            joint.enablePreprocessing = false;
-            joint.massScale = 1f;
-            joint.connectedMassScale = 1f;
-            objGrab = true;
+            if (!joint)
+            {
+                joint = HandRB.gameObject.AddComponent<FixedJoint>();
+                joint.autoConfigureConnectedAnchor = true;
+                joint.connectedBody = obj;
+                joint.breakForce = 2000f;
+                joint.breakTorque = 2000f;
+                joint.enablePreprocessing = false;
+                joint.massScale = 1f;
+                joint.connectedMassScale = 1f;
+                objGrab = true;
+            }
         }
+        
     }
 
     void DestroyJoints()
@@ -84,8 +89,9 @@ public class grabSystemHandler : MonoBehaviour
     {
         if (Grabbing)
         {
+            otherGObj = other.gameObject;
             otherBody = other.GetComponent<Rigidbody>();
-            CreateFixedJoint(otherBody);
+            CreateFixedJoint(otherBody, otherGObj);
         }
     }
 }
