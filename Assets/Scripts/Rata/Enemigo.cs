@@ -10,6 +10,7 @@ public class Enemigo : MonoBehaviour
     public LayerMask obstacleLayer; // para paredes
     public LayerMask playerLayer;   // para detectar al jugador
     public float visionDistance = 10f; // hasta dónde puede "ver" al jugador
+    public float pushForce = 5f; // (puesto por Pablo) Fuerza de empuje, modificable desde el editor
 
     private Vector3 targetPosition;
     private Transform player;
@@ -102,6 +103,26 @@ public class Enemigo : MonoBehaviour
     {
         posicionRuido = posicion;
         investigandoRuido = true;
+    }
+
+    //(funcion puesta por Pablo)
+    private void OnCollisionEnter(Collision collision)
+    {
+        // Primero miramos si el objeto con el que ha colisionado tiene el layer "Player"
+        if (collision.gameObject.layer == LayerMask.NameToLayer("Player"))
+        {
+            // Tomamos o miramos la posicion del jugador
+            Rigidbody playerRb = collision.gameObject.GetComponent<Rigidbody>();
+
+            if (playerRb != null)
+            {
+                Vector3 pushDirection = collision.transform.position - transform.position; //Pillamos la posicion del player con el que hemos colisionado y luego lo restamos con la posicion del enemigo para empujarlo hacia la otra direccion
+                pushDirection.y = 0; // esto es por si queremos que empuje hacia arriba, de momento esta en 0 asi que solo empuja horizontalmente
+                pushDirection.Normalize();
+
+                playerRb.AddForce(pushDirection * pushForce, ForceMode.Impulse); //Con todas las direcciones pilladas, lo empujamos
+            }
+        }
     }
 }
 

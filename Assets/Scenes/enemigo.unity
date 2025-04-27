@@ -2084,7 +2084,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -2450,6 +2450,7 @@ GameObject:
   - component: {fileID: 1626409269}
   - component: {fileID: 1626409268}
   - component: {fileID: 1626409267}
+  - component: {fileID: 1626409271}
   m_Layer: 7
   m_Name: 'Sphere '
   m_TagString: Player
@@ -2537,12 +2538,39 @@ Transform:
   m_GameObject: {fileID: 1626409266}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.65, y: 2.22, z: -13.95}
+  m_LocalPosition: {x: 12.65, y: 2.22, z: -7.88}
   m_LocalScale: {x: 2.2021, y: 2.2021, z: 2.2021}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!54 &1626409271
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1626409266}
+  serializedVersion: 4
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_CenterOfMass: {x: 0, y: 0, z: 0}
+  m_InertiaTensor: {x: 1, y: 1, z: 1}
+  m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ImplicitCom: 1
+  m_ImplicitTensor: 1
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1636196075
 GameObject:
   m_ObjectHideFlags: 0
@@ -2901,6 +2929,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 128
   visionDistance: 10
+  pushForce: 3
 --- !u!54 &1878003921
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3008,7 +3037,7 @@ Transform:
   m_GameObject: {fileID: 1878003919}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -7.75, y: 2.72, z: -2.9030962}
+  m_LocalPosition: {x: -5.64, y: 2.72, z: -4.6}
   m_LocalScale: {x: 1.5215, y: 1.5215, z: 1.5215}
   m_ConstrainProportionsScale: 0
   m_Children: []
