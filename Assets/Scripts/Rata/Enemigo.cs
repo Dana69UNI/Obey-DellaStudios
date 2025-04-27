@@ -10,7 +10,7 @@ public class Enemigo : MonoBehaviour
     public LayerMask obstacleLayer; // para paredes
     public LayerMask playerLayer;   // para detectar al jugador
     public float visionDistance = 10f; // hasta dónde puede "ver" al jugador
-    public float pushForce = 5f; // (puesto por Pablo) Fuerza de empuje, modificable desde el editor
+    public float pushForce = 500f; // (puesto por Pablo) Fuerza de empuje, modificable desde el editor
 
     private Vector3 targetPosition;
     private Transform player;
