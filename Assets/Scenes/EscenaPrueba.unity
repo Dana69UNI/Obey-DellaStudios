@@ -10194,7 +10194,7 @@ MonoBehaviour:
   movementForce: 100
   maxSpeed: 1000
   JumpForce: 200
-  treparForce: 0.3
+  treparForce: 450
   move: {fileID: 2031438317623594684, guid: f575466e47e726b438ad2f9726418134, type: 3}
   playerCamera: {fileID: 397060782}
   <groundedRayRight>k__BackingField: {fileID: 736171183}

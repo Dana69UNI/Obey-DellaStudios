@@ -129,7 +129,7 @@ public class characterMovement : MonoBehaviour
     {
         if(isGrounded)
         {
-            rb.AddForce(JumpForce*Vector3.up, ForceMode.Impulse);
+            rb.AddForce(JumpForce * Vector3.up, ForceMode.Impulse);
        
         }
     }
@@ -146,8 +146,8 @@ public class characterMovement : MonoBehaviour
         while (contadorTrepar < 1f)
         {
             Debug.Log("llego");
-            tibiaL.AddForce(treparForce * Vector3.up, ForceMode.Impulse);
-            tibiaR.AddForce(treparForce * Vector3.up, ForceMode.Impulse);
+            tibiaL.AddForce(treparForce * Time.deltaTime * Vector3.up, ForceMode.Impulse);
+            tibiaR.AddForce(treparForce * Time.deltaTime * Vector3.up, ForceMode.Impulse);
             contadorTrepar += Time.deltaTime;
             yield return null;
         }
