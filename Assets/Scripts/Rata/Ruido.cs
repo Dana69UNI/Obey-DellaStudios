@@ -14,12 +14,14 @@ public class Ruido : MonoBehaviour
 
     void EmitirRuido()
     {
+        // Detecta a los enemigos en el área de radioRuido
         Collider[] colliders = Physics.OverlapSphere(transform.position, radioRuido);
         foreach (Collider col in colliders)
         {
-            Enemigo enemigo = col.GetComponent<Enemigo>();
+            NavMeshEnemigo enemigo = col.GetComponent<NavMeshEnemigo>();
             if (enemigo != null)
             {
+                // Llama al método EscucharRuido del enemigo
                 enemigo.EscucharRuido(transform.position);
             }
         }
