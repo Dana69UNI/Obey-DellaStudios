@@ -35,6 +35,8 @@ public class Engranaje : MonoBehaviour
             animatorPuerta.SetTrigger("abrir");
             animatorEngranaje2.SetTrigger("rotar");
             animatorEngranaje3.SetTrigger("rotar");
+
+           
         }
     }
 }
