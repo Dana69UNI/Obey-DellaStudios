@@ -229,6 +229,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: -90, z: -90}
+--- !u!1 &191787449 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87774bc1e85540544bd873e52afe1bc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1154532757}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &191787453
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191787449}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1d002f2671e4f8644a345703fc679a31, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &358575630
 GameObject:
   m_ObjectHideFlags: 0
@@ -602,7 +629,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42679e8213d81444886185ab62054d43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  puntoDePegado: {fileID: 410600977}
 --- !u!65 &815668197
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -650,17 +676,17 @@ PrefabInstance:
     - target: {fileID: -8679921383154817045, guid: 87774bc1e85540544bd873e52afe1bc3,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 939
+      value: 946
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 87774bc1e85540544bd873e52afe1bc3,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 663
+      value: 679
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 87774bc1e85540544bd873e52afe1bc3,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -70
+      value: -1595
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 87774bc1e85540544bd873e52afe1bc3,
         type: 3}
@@ -809,7 +835,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87774bc1e85540544bd873e52afe1bc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 191787453}
   m_SourcePrefab: {fileID: 100100000, guid: 87774bc1e85540544bd873e52afe1bc3, type: 3}
 --- !u!1 &1161085285
 GameObject:
@@ -1051,7 +1081,11 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87774bc1e85540544bd873e52afe1bc3,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1893916717}
   m_SourcePrefab: {fileID: 100100000, guid: 87774bc1e85540544bd873e52afe1bc3, type: 3}
 --- !u!1 &1495138665
 GameObject:
@@ -1371,6 +1405,33 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 180, y: -90, z: -90}
+--- !u!1 &1893916713 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87774bc1e85540544bd873e52afe1bc3,
+    type: 3}
+  m_PrefabInstance: {fileID: 1459644581}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &1893916717
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1893916713}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 28cd4f12761342244a6249e5f7b597eb, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &2028271763 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87774bc1e85540544bd873e52afe1bc3,
@@ -1391,6 +1452,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animatorEngranaje: {fileID: 2028271771}
   animatorPuerta: {fileID: 1161085287}
+  animatorEngranaje2: {fileID: 191787453}
+  animatorEngranaje3: {fileID: 1893916717}
 --- !u!65 &2028271765
 BoxCollider:
   m_ObjectHideFlags: 0

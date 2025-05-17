@@ -2,8 +2,10 @@ using UnityEngine;
 
 public class Engranaje : MonoBehaviour
 {
-    public Animator animatorEngranaje;  // Arrástralos en Inspector
+    public Animator animatorEngranaje;
     public Animator animatorPuerta;
+    public Animator animatorEngranaje2;
+    public Animator animatorEngranaje3;
 
     private Rigidbody rb;
     private bool yaPegado = false;
@@ -15,30 +17,24 @@ public class Engranaje : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // Si ya está pegado, no hacemos nada
-        if (yaPegado)
-            return;
+        if (yaPegado) return;
 
-        // Comprobamos si entramos en contacto con el punto de pegado
         if (other.CompareTag("PuntoEngranaje"))
         {
-            // Hacemos kinematic para que la física no interfiera
-            if (rb != null)
-            {
-                rb.isKinematic = true;
-                rb.velocity = Vector3.zero;
-                rb.angularVelocity = Vector3.zero;
-            }
+            // Paramos física para que no interfiera
+            rb.isKinematic = true;
+            rb.useGravity = false;
 
-            // Teletransportamos el engranaje a la posición y rotación exacta del punto
+            // Teletransportamos al punto exacto
             transform.position = other.transform.position;
             transform.rotation = other.transform.rotation;
 
             yaPegado = true;
 
-            // Activamos las animaciones
             animatorEngranaje.SetTrigger("rotar");
             animatorPuerta.SetTrigger("abrir");
+            animatorEngranaje2.SetTrigger("rotar");
+            animatorEngranaje3.SetTrigger("rotar");
         }
     }
 }
