@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/NivelTutorial.unity
     guid: 19d7fe36c55ebf0429b127f511df5417
   - enabled: 1
+    path: Assets/Scenes/UI/IntroNivel1.unity
+    guid: eceadece3d634cf46899656a09e38ab5
+  - enabled: 1
+    path: Assets/Scenes/UI/Dialogo.unity
+    guid: 380c54d823c0e5a46be85d284c5999bd
+  - enabled: 1
     path: Assets/Scenes/NivelUno.unity
     guid: 889fd5a178c64bb4ba6a270bbaae11c5
   m_configObjects: {}

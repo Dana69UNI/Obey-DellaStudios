@@ -15,7 +15,7 @@ public class IntroNivel1Controller : MonoBehaviour
     IEnumerator CambiarEscenaDespues()
     {
         yield return new WaitForSeconds(tiempoEspera);
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 }
 
