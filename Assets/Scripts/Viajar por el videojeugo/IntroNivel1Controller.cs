@@ -2,10 +2,10 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class IntroNivelController : MonoBehaviour
+public class IntroNivel1Controller : MonoBehaviour
 {
     public float tiempoEspera = 3f; // Tiempo antes de cargar la siguiente escena
-    public string nombreSiguienteEscena = "NivelTutorial";
+    public string nombreSiguienteEscena = "NivelUno";
 
     void Start()
     {
@@ -15,6 +15,7 @@ public class IntroNivelController : MonoBehaviour
     IEnumerator CambiarEscenaDespues()
     {
         yield return new WaitForSeconds(tiempoEspera);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(5);
     }
 }
+
