@@ -286,7 +286,7 @@ Transform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 32.61925, y: -4.4692254, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 3555267283454525034}
   - {fileID: 5791507168384670327}
@@ -460,7 +460,7 @@ Transform:
   m_LocalRotation: {x: -0.007884757, y: -0.020475375, z: 0.003327133, w: 0.9997538}
   m_LocalPosition: {x: -32.6, y: 9, z: -6.4}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 7086675464331094513}
   m_Father: {fileID: 8476942917728764035}
@@ -620,7 +620,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -32.61925, y: 4.4692254, z: -0.75446177}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 5460704062605543111}
   - {fileID: 606244569706958455}
@@ -906,7 +906,7 @@ GameObject:
   - component: {fileID: 8751650057922557011}
   - component: {fileID: 5493727519529221845}
   m_Layer: 5
-  m_Name: Image
+  m_Name: DialogueBox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1065,7 +1065,7 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -44.91925, y: -18.969702, z: -74.63411}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 8476942917728764035}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -4109,6 +4109,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 9a25ac6c98f9bca4095a9196622fade4,
+        type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: -4765483730689450207, guid: 9a25ac6c98f9bca4095a9196622fade4,
         type: 3}
