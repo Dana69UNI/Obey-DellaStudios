@@ -1349,7 +1349,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 37659635}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 63174edc60530ee488ee56a735a89617, type: 3}
   m_Name: 
@@ -48752,6 +48752,12 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
   m_Center: {x: 0, y: 0, z: -0.000015258789}
+--- !u!4 &1418575089 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8476942917728764035, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 896920651}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1419358049
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -50396,6 +50402,26 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: RataHandler
+      objectReference: {fileID: 0}
+    - target: {fileID: 1232078225073963234, guid: f7da71889bdf0a84eb7ad749ce1c192d,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1418575089}
+    - target: {fileID: 1232078225073963234, guid: f7da71889bdf0a84eb7ad749ce1c192d,
+        type: 3}
+      propertyPath: detectionRadius
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124613150954984521, guid: f7da71889bdf0a84eb7ad749ce1c192d,
+        type: 3}
+      propertyPath: m_Height
+      value: 9.69
+      objectReference: {fileID: 0}
+    - target: {fileID: 9124613150954984521, guid: f7da71889bdf0a84eb7ad749ce1c192d,
+        type: 3}
+      propertyPath: m_Radius
+      value: 18.21
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
