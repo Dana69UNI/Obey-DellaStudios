@@ -13,6 +13,11 @@ public class grabSystemHandler : MonoBehaviour
     GameObject otherGObj;
     Rigidbody otherBody;
     FixedJoint joint;
+    gorroHandler GorroExtScript = null;
+    public gorroHandler GorroScript;
+    private int gorroExtIndex;
+    private int gorroIndex;
+    private bool canChangeHat = true;
     void Start()
     {
         HandRB = GetComponent<Rigidbody>();
@@ -63,6 +68,20 @@ public class grabSystemHandler : MonoBehaviour
     {
         if(otherGObj.layer != LayerMask.NameToLayer("ExcludeCollisionChar"))
         {
+            if(otherGObj.layer == LayerMask.NameToLayer("Gorro"))
+            {
+                if(canChangeHat)
+                {
+                    GorroExtScript = otherGObj.GetComponent<gorroHandler>();
+                    gorroExtIndex = GorroExtScript.getHatIndex();
+                    gorroIndex = GorroScript.getHatIndex();
+                    GorroExtScript.changeHat(gorroIndex);
+                    GorroScript.changeHat(gorroExtIndex);
+                    canChangeHat = false;
+                    StartCoroutine(GorroCD());
+                }
+               
+            }
             if (!joint)
             {
                 joint = HandRB.gameObject.AddComponent<FixedJoint>();
@@ -93,5 +112,12 @@ public class grabSystemHandler : MonoBehaviour
             otherBody = other.GetComponent<Rigidbody>();
             CreateFixedJoint(otherBody, otherGObj);
         }
+    }
+
+    IEnumerator GorroCD()
+    {
+        yield return new WaitForSeconds(1.2f);
+        canChangeHat = true;
+
     }
 }
