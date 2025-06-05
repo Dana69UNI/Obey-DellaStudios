@@ -108,6 +108,43 @@
 
 
 
+//using UnityEngine;
+
+//public class CameraCollision : MonoBehaviour
+//{
+//    public Transform pivot;
+//    public Transform defaultCamPos;
+
+//    private RaycastHit hit;
+//    private Vector3 newPosition;
+
+//    void Update()
+//    {
+//        Vector3 direction = (defaultCamPos.position - pivot.position).normalized;
+//        float maxDistance = Vector3.Distance(defaultCamPos.position, pivot.position);
+
+//        if (Physics.Linecast(pivot.position, defaultCamPos.position, out hit))
+//        {
+//            Debug.DrawLine(pivot.position, hit.point, Color.red);
+//            newPosition = hit.point - direction * 0.1f;
+//        }
+//        else
+//        {
+//            Debug.DrawLine(pivot.position, defaultCamPos.position, Color.green);
+//            newPosition = defaultCamPos.position;
+//        }
+//    }
+
+//    void LateUpdate()
+//    {
+//        transform.position = newPosition;
+//    }
+//}
+
+
+
+
+
 
 
 
@@ -215,3 +252,62 @@ public class CameraCollision : MonoBehaviour
         transform.position = newPosition;
     }
 }
+
+
+
+
+
+//using UnityEngine;
+
+//public class CameraCollision : MonoBehaviour
+//{
+//    public Transform pivot;           // Punto de referencia (normalmente el jugador o un empty cerca)
+//    public Transform defaultCamPos;  // Posición ideal de la cámara cuando no hay obstáculos
+
+//    public float smoothSpeed = 10f;  // Velocidad de suavizado para el movimiento de cámara
+//    public float offset = 0.1f;      // Pequeña separación para que la cámara no choque justo con la pared
+
+//    private Vector3 newPosition;
+
+//    void Start()
+//    {
+//        // Inicializamos newPosition en la posición ideal al inicio
+//        newPosition = defaultCamPos.position;
+//    }
+
+//    void Update()
+//    {
+//        // Calculamos la dirección desde el pivot hacia la posición ideal de la cámara
+//        Vector3 direction = (defaultCamPos.position - pivot.position).normalized;
+
+//        // Distancia máxima que queremos entre pivot y cámara
+//        float maxDistance = Vector3.Distance(defaultCamPos.position, pivot.position);
+
+//        RaycastHit hit;
+
+//        // Hacemos un Linecast para detectar si hay obstáculos entre pivot y cámara ideal
+//        if (Physics.Linecast(pivot.position, defaultCamPos.position, out hit))
+//        {
+//            Debug.DrawLine(pivot.position, hit.point, Color.red);
+
+//            // Ajustamos la posición para que la cámara quede justo antes del obstáculo (con un pequeño offset)
+//            newPosition = pivot.position + direction * (hit.distance - offset);
+//        }
+//        else
+//        {
+//            Debug.DrawLine(pivot.position, defaultCamPos.position, Color.green);
+
+//            // No hay obstáculo, cámara en posición ideal
+//            newPosition = defaultCamPos.position;
+//        }
+//    }
+
+//    void LateUpdate()
+//    {
+//        // Movemos la cámara suavemente hacia la posición calculada
+//        transform.position = Vector3.Lerp(transform.position, newPosition, Time.deltaTime * smoothSpeed);
+
+//        // La cámara mira siempre al pivot
+//        transform.LookAt(pivot);
+//    }
+//}
