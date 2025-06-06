@@ -12,7 +12,7 @@ public class PruebaIAEnemigo : MonoBehaviour
     public float wanderTimer = 5f;
     public Transform VisionPos;
     private float timer = 0;
-
+    private bool SoundWander =false;
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -27,24 +27,27 @@ public class PruebaIAEnemigo : MonoBehaviour
 
     private void AiState()
     {
-
-        float distanceToPlayer = Vector3.Distance(VisionPos.position, player.position);
-
-        if (distanceToPlayer <= detectionRadius)
+        if(!SoundWander)
         {
+            float distanceToPlayer = Vector3.Distance(VisionPos.position, player.position);
 
-            agent.SetDestination(player.position);
-        }
-        else
-        {
-
-            if (timer >= wanderTimer)
+            if (distanceToPlayer <= detectionRadius)
             {
-                Vector3 newPos = RandomNavSphere(VisionPos.position, wanderRadius, -1);
-                agent.SetDestination(newPos);
-                timer = 0;
+
+                agent.SetDestination(player.position);
+            }
+            else
+            {
+
+                if (timer >= wanderTimer)
+                {
+                    Vector3 newPos = RandomNavSphere(VisionPos.position, wanderRadius, -1);
+                    agent.SetDestination(newPos);
+                    timer = 0;
+                }
             }
         }
+       
     }
 
     public static Vector3 RandomNavSphere(Vector3 origin, float dist, int layermask)
@@ -63,5 +66,19 @@ public class PruebaIAEnemigo : MonoBehaviour
         // Para que en el editor veas el rango de detección
         Gizmos.color = Color.red;
         Gizmos.DrawWireSphere(VisionPos.position, detectionRadius);
+    }
+
+    public void SoundCheck(Vector3 pos)
+    {
+        SoundWander = true;
+        Debug.Log("escuché eso viejo");
+        agent.SetDestination(pos);
+        StartCoroutine(SoundWanderCd());
+    }
+
+    IEnumerator SoundWanderCd()
+    {
+        yield return new WaitForSeconds(4f);
+        SoundWander =false;
     }
 }

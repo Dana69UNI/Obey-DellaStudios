@@ -5,11 +5,22 @@ using UnityEngine;
 public class Ruido : MonoBehaviour
 {
     public float radioRuido = 10f;
-
+    private PruebaIAEnemigo enemigoIa;
+    private Rigidbody rb;
+    private void Start()
+    {
+        rb = GetComponent<Rigidbody>();
+    }
     void OnCollisionEnter(Collision collision)
     {
-        // Cuando toca algo (suelo, pared, etc), hace ruido
-        EmitirRuido();
+        if(!collision.collider.CompareTag("Rata"))
+        {
+            if (collision.relativeVelocity.magnitude > 12f)
+            {
+                EmitirRuido();
+            }
+        }
+      
     }
 
     void EmitirRuido()
@@ -18,11 +29,11 @@ public class Ruido : MonoBehaviour
         Collider[] colliders = Physics.OverlapSphere(transform.position, radioRuido);
         foreach (Collider col in colliders)
         {
-            NavMeshEnemigo enemigo = col.GetComponent<NavMeshEnemigo>();
-            if (enemigo != null)
+            enemigoIa = col.GetComponent<PruebaIAEnemigo>();
+            if (enemigoIa != null)
             {
                 // Llama al método EscucharRuido del enemigo
-                enemigo.EscucharRuido(transform.position);
+                enemigoIa.SoundCheck(transform.position);
             }
         }
     }

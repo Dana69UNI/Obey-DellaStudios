@@ -9,6 +9,7 @@ TagManager:
   - Engranaje
   - PuntoEngranaje
   - ObstaculosCamara
+  - Rata
   layers:
   - Default
   - TransparentFX
