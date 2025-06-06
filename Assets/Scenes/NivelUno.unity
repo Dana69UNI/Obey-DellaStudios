@@ -1409,8 +1409,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -2684,8 +2684,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -3220,8 +3220,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -14991,8 +14991,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -15148,8 +15148,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -18465,8 +18465,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -18583,8 +18583,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -19054,8 +19054,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -19116,39 +19116,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1866169414}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &485815690 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4454528714613031890, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1487154667}
-  m_PrefabAsset: {fileID: 0}
---- !u!4 &485815691 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4634036699079826589, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-    type: 3}
-  m_PrefabInstance: {fileID: 1487154667}
-  m_PrefabAsset: {fileID: 0}
---- !u!65 &485815696
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 485815690}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.7645162, y: 0.2774344, z: 1.2119445}
-  m_Center: {x: 0.10762996, y: 2.5318205, z: 4.177144}
 --- !u!1001 &487551367
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25342,8 +25309,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -25595,8 +25562,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -27143,8 +27110,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -29693,8 +29660,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -30297,6 +30264,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CharacterWHOLE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5654965817236088593, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+        type: 3}
+      propertyPath: far clip plane
+      value: 5000
       objectReference: {fileID: 0}
     - target: {fileID: 8476942917728764035, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
         type: 3}
@@ -34523,8 +34495,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -45851,8 +45823,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -47213,8 +47185,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -50444,21 +50416,6 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 320054089035693809, guid: f7da71889bdf0a84eb7ad749ce1c192d,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.4910955
-      objectReference: {fileID: 0}
-    - target: {fileID: 320054089035693809, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4910955
-      objectReference: {fileID: 0}
-    - target: {fileID: 320054089035693809, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4910955
-      objectReference: {fileID: 0}
-    - target: {fileID: 320054089035693809, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 114.97
       objectReference: {fileID: 0}
@@ -50517,167 +50474,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1418575089}
-    - target: {fileID: 1232078225073963234, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: VisionPos
-      value: 
-      objectReference: {fileID: 1903972096}
-    - target: {fileID: 1232078225073963234, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: detectionRadius
-      value: 5.8
-      objectReference: {fileID: 0}
-    - target: {fileID: 1275438561294200701, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 1898354784436708803, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 2948841397910600614, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 3261057221331920252, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 3324183353749533522, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 3460308819841310393, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 3500189548490015521, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 3959660239343388432, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5009895996821435048, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5294557176820708785, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5402846127828990504, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5420467293077990611, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5923385151400749552, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 5944336086851476275, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 6210795973678214077, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 7042247076185091072, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 7337726391253271732, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 7454061348056194768, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 7682651081436859832, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 7983925035521163349, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 8250164962692911548, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 8826927606104508291, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 8854607688818597012, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 9037244727015565227, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 9074679573586369394, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_TagString
-      value: Rata
-      objectReference: {fileID: 0}
-    - target: {fileID: 9124613150954984521, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_Height
-      value: 9.69
-      objectReference: {fileID: 0}
-    - target: {fileID: 9124613150954984521, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      propertyPath: m_Radius
-      value: 12.58
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects:
-    - targetCorrespondingSourceObject: {fileID: 4634036699079826589, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      insertIndex: 0
-      addedObject: {fileID: 2039172382}
-    - targetCorrespondingSourceObject: {fileID: 4634036699079826589, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      insertIndex: 1
-      addedObject: {fileID: 1903972096}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4454528714613031890, guid: f7da71889bdf0a84eb7ad749ce1c192d,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 485815696}
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f7da71889bdf0a84eb7ad749ce1c192d, type: 3}
 --- !u!1001 &1489471158
 PrefabInstance:
@@ -55409,8 +55209,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -56236,8 +56036,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -63035,37 +62835,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010000003, y: 0.01, z: 0.010000003}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1903972095
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1903972096}
-  m_Layer: 0
-  m_Name: RataVision
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1903972096
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1903972095}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.79999924, z: 15.02}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 485815691}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1906102621
 GameObject:
   m_ObjectHideFlags: 0
@@ -65520,8 +65289,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -66920,8 +66689,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -67156,37 +66925,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.010000003, y: 0.01, z: 0.010000003}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &2039172381
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2039172382}
-  m_Layer: 0
-  m_Name: RataPared
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2039172382
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2039172381}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 6.8}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 485815691}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2043387683
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -68174,8 +67912,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -69805,8 +69543,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -69923,8 +69661,8 @@ Light:
   m_Type: 0
   m_Shape: 0
   m_Color: {r: 0.026477395, g: 0.046024833, b: 0.16037738, a: 1}
-  m_Intensity: 950
-  m_Range: 92.9
+  m_Intensity: 949.2
+  m_Range: 20.4
   m_SpotAngle: 179
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
