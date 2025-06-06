@@ -10,7 +10,7 @@ public class PruebaIAEnemigo : MonoBehaviour
     public float detectionRadius = 10f;
     public float wanderRadius = 20f;
     public float wanderTimer = 5f;
-
+    public Transform VisionPos;
     private float timer = 0;
 
     private void Start()
@@ -28,7 +28,7 @@ public class PruebaIAEnemigo : MonoBehaviour
     private void AiState()
     {
 
-        float distanceToPlayer = Vector3.Distance(transform.position, player.position);
+        float distanceToPlayer = Vector3.Distance(VisionPos.position, player.position);
 
         if (distanceToPlayer <= detectionRadius)
         {
@@ -40,7 +40,7 @@ public class PruebaIAEnemigo : MonoBehaviour
 
             if (timer >= wanderTimer)
             {
-                Vector3 newPos = RandomNavSphere(transform.position, wanderRadius, -1);
+                Vector3 newPos = RandomNavSphere(VisionPos.position, wanderRadius, -1);
                 agent.SetDestination(newPos);
                 timer = 0;
             }
@@ -62,6 +62,6 @@ public class PruebaIAEnemigo : MonoBehaviour
     {
         // Para que en el editor veas el rango de detección
         Gizmos.color = Color.red;
-        Gizmos.DrawWireSphere(transform.position, detectionRadius);
+        Gizmos.DrawWireSphere(VisionPos.position, detectionRadius);
     }
 }
