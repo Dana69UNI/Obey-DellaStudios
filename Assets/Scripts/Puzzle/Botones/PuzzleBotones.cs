@@ -5,12 +5,16 @@ public class PuzzleBotones : MonoBehaviour
 {
     public List<string> ordenCorrecto = new List<string> { "Rojo", "Amarillo", "Verde" };
     private List<string> ordenJugador = new List<string>();
+    public Animator Color;
+   
 
     public GameObject llave; // Objeto llave que se activa al completar el puzzle
 
     private void Start()
     {
         llave.SetActive(false);
+        Color = GetComponent<Animator>();
+       
     }
 
     public void BotonPulsado(string color)
@@ -24,6 +28,8 @@ public class PuzzleBotones : MonoBehaviour
             {
                 Debug.Log("¡Secuencia incorrecta! Reiniciando...");
                 ordenJugador.Clear();
+                Color.SetTrigger("Incorrecto");
+
                 return;
             }
         }
@@ -31,8 +37,12 @@ public class PuzzleBotones : MonoBehaviour
         // Si acierta todos
         if (ordenJugador.Count == ordenCorrecto.Count)
         {
+
             Debug.Log("Puzzle resuelto");
             llave.SetActive(true);
+           
+            Color.SetTrigger("Correcto");
+           
         }
     }
 }
