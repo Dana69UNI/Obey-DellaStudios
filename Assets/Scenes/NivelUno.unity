@@ -38817,7 +38817,7 @@ GameObject:
   - component: {fileID: 1182636692}
   - component: {fileID: 1182636696}
   m_Layer: 0
-  m_Name: f
+  m_Name: JuagadorDePruebaParaLosBotones
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

@@ -31,7 +31,7 @@ public class PuzzleBotones : MonoBehaviour
         // Si acierta todos
         if (ordenJugador.Count == ordenCorrecto.Count)
         {
-            Debug.Log("¡Puzzle resuelto!");
+            Debug.Log("Puzzle resuelto");
             llave.SetActive(true);
         }
     }
