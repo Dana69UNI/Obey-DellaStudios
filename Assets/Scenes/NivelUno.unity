@@ -38663,7 +38663,7 @@ GameObject:
   - component: {fileID: 1185994307}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Boton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -39987,7 +39987,7 @@ GameObject:
   - component: {fileID: 1225160819}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Boton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -50640,6 +50640,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Engranaje (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 6560175712845502142, guid: 6e9f133663e84f1498313b0e5ea3f695,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 9110999076214980620, guid: 6e9f133663e84f1498313b0e5ea3f695,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -51866,7 +51871,7 @@ GameObject:
   - component: {fileID: 1467854072}
   m_Layer: 0
   m_Name: Cylinder
-  m_TagString: Untagged
+  m_TagString: Boton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -55764,7 +55769,7 @@ Transform:
   m_GameObject: {fileID: 1592593143}
   serializedVersion: 2
   m_LocalRotation: {x: -0.70710677, y: 0, z: 0, w: -0.70710677}
-  m_LocalPosition: {x: -122.43, y: -7.62, z: -41.9}
+  m_LocalPosition: {x: -122.43, y: -7.62, z: -41.88}
   m_LocalScale: {x: 0.5226683, y: 0.696891, z: 0.696891}
   m_ConstrainProportionsScale: 0
   m_Children: []
