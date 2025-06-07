@@ -7,7 +7,7 @@ public class BotonPuzzle : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player")) // Asegúrate de que el jugador tenga el tag "Player"
+        if (other.CompareTag("Hand.L") || other.CompareTag("Hand.R") || other.CompareTag("Player")) // Asegúrate de que el jugador tenga el tag "Player"
         {
             Debug.Log("Botón tocado: " + colorBoton);
             puzzleManager.BotonPulsado(colorBoton);
