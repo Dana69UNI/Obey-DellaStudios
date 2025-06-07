@@ -33939,10 +33939,25 @@ PrefabInstance:
       propertyPath: m_Name
       value: CharacterWHOLE
       objectReference: {fileID: 0}
+    - target: {fileID: 5355720107770219374, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 5654965817236088593, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
         type: 3}
       propertyPath: far clip plane
       value: 5000
+      objectReference: {fileID: 0}
+    - target: {fileID: 6562942820464853197, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 7019824313951650687, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+        type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 8476942917728764035, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
         type: 3}
