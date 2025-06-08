@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Engranaje2 : MonoBehaviour
 {
@@ -8,6 +8,8 @@ public class Engranaje2 : MonoBehaviour
     public Animator animatorEngranaje3;
     public GameObject EngranajeCorrecto;
     public GameObject Llave;
+
+    public PuzzleFinalManager puzzleFinalManager;
 
     private Rigidbody rb;
     private bool yaPegado = false;
@@ -26,7 +28,7 @@ public class Engranaje2 : MonoBehaviour
 
         if (other.CompareTag("Engranaje2"))
         {
-            // Paramos f�sica para que no interfiera
+            // Paramos física para que no interfiera
             rb.isKinematic = true;
             rb.useGravity = false;
 
@@ -42,6 +44,14 @@ public class Engranaje2 : MonoBehaviour
             animatorEngranaje2.SetTrigger("rotar");
             animatorEngranaje3.SetTrigger("rotar");
 
+            if (PuzzleFinalManager.Instance != null)
+            {
+                PuzzleFinalManager.Instance.GearPlacedCorrectly();
+            }
+            else
+            {
+                Debug.LogWarning("❗ PuzzleManager.Instance es NULL. Asegúrate de que el GameObject con el script PuzzleManager está en la escena.");
+            }
 
         }
     }

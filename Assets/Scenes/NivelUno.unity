@@ -26189,6 +26189,7 @@ MonoBehaviour:
   animatorEngranaje3: {fileID: 569718258}
   EngranajeCorrecto: {fileID: 423809710}
   Llave: {fileID: 125205762}
+  puzzleFinalManager: {fileID: 1973951461}
 --- !u!65 &495287012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -33202,6 +33203,7 @@ MonoBehaviour:
   animatorEngranaje3: {fileID: 2025307792}
   EngranajeCorrecto: {fileID: 636154709}
   Llave: {fileID: 125205762}
+  puzzleFinalManager: {fileID: 1973951461}
 --- !u!1001 &647092187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34226,6 +34228,7 @@ MonoBehaviour:
   animatorEngranaje3: {fileID: 477109925}
   EngranajeCorrecto: {fileID: 508539399}
   Llave: {fileID: 125205762}
+  puzzleFinalManager: {fileID: 1973951461}
 --- !u!1001 &664379678
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -37659,6 +37662,7 @@ MonoBehaviour:
   animatorEngranaje3: {fileID: 7864477458195937160}
   EngranajeCorrecto: {fileID: 1563877831754865651}
   Llave: {fileID: 125205762}
+  puzzleFinalManager: {fileID: 0}
 --- !u!1001 &738233602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -82017,6 +82021,7 @@ Transform:
   - {fileID: 990042627}
   - {fileID: 1670147112}
   - {fileID: 366438122}
+  - {fileID: 1973951460}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1762707340
@@ -90291,6 +90296,52 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.01, y: 0.01, z: 0.01}
   m_Center: {x: 0, y: 0, z: -0.000015258789}
+--- !u!1 &1973951459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1973951460}
+  - component: {fileID: 1973951461}
+  m_Layer: 0
+  m_Name: PuzzleFinalManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1973951460
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973951459}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.953972, y: 17.035118, z: 4.343389}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1756234683}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1973951461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1973951459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78bbda0dc51a73c489c2ac15904108bf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  totalEngranajes: 3
+  siguienteEscena: "Animaci\xF3n Final"
 --- !u!4 &1977130720 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9110999076214980620, guid: 6e9f133663e84f1498313b0e5ea3f695,

@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NivelUno.unity
     guid: 889fd5a178c64bb4ba6a270bbaae11c5
+  - enabled: 1
+    path: "Assets/Scenes/Animaciones/Animaci\xF3nFinal.unity"
+    guid: 1f8f6ea7a760d9d4bb97b717070743fe
   m_configObjects: {}
