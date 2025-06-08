@@ -11,6 +11,8 @@ TagManager:
   - ObstaculosCamara
   - Rata
   - Boton
+  - Engranaje2
+  - Engranaje3
   layers:
   - Default
   - TransparentFX
