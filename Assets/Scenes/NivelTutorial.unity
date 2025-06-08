@@ -13360,6 +13360,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nombreSiguienteEscena: NivelUno
+  Personaje: {fileID: 1948561618}
 --- !u!1 &1194967499
 GameObject:
   m_ObjectHideFlags: 0
@@ -18010,6 +18011,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1928419878}
   m_CullTransparentMesh: 1
+--- !u!1 &1948561618 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 970373677158289218, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+    type: 3}
+  m_PrefabInstance: {fileID: 1866086386}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1948720087
 PrefabInstance:
   m_ObjectHideFlags: 0
