@@ -22,26 +22,33 @@ public class BotonPuzzle : MonoBehaviour
     {
         if (other.CompareTag("Hand.L") || other.CompareTag("Hand.R") || other.CompareTag("Player")) // Asegúrate de que el jugador tenga el tag "Player"
         {
-            if (colorBoton == "Rojo")
+            if (!canPress)
             {
-                BotonBrillar.SetTrigger("Brillar");
-                canPress = false;
-                StartCoroutine(CoolDownPresionar());
             }
-            if (colorBoton == "Verde")
+            else
             {
-                BotonBrillar.SetTrigger("Brillar2");
-                canPress = false;
-                StartCoroutine(CoolDownPresionar());
+                if (colorBoton == "Rojo")
+                {
+                    BotonBrillar.SetTrigger("Brillar");
+                    canPress = false;
+                    StartCoroutine(CoolDownPresionar());
+                }
+                if (colorBoton == "Verde")
+                {
+                    BotonBrillar.SetTrigger("Brillar2");
+                    canPress = false;
+                    StartCoroutine(CoolDownPresionar());
+                }
+                if (colorBoton == "Amarillo")
+                {
+                    BotonBrillar.SetTrigger("Brillar3");
+                    canPress = false;
+                    StartCoroutine(CoolDownPresionar());
+                }
+                Debug.Log("Botón tocado: " + colorBoton);
+                puzzleManager.BotonPulsado(colorBoton);
             }
-            if (colorBoton == "Amarillo")
-            {
-                BotonBrillar.SetTrigger("Brillar3");
-                canPress = false;
-                StartCoroutine(CoolDownPresionar());
-            }
-            Debug.Log("Botón tocado: " + colorBoton);
-            puzzleManager.BotonPulsado(colorBoton);
+           
 
            
         }

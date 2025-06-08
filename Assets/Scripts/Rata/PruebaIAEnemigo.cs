@@ -13,6 +13,11 @@ public class PruebaIAEnemigo : MonoBehaviour
     public Transform VisionPos;
     private float timer = 0;
     private bool SoundWander =false;
+    private bool FollowingPlayer =false;
+    private Rigidbody plRB;
+    private bool PlayerCooldown;
+    private Health healtPlayer;
+
     private void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -33,12 +38,17 @@ public class PruebaIAEnemigo : MonoBehaviour
 
             if (distanceToPlayer <= detectionRadius)
             {
+                if(!PlayerCooldown)
+                {
+                    FollowingPlayer = true;
+                    agent.SetDestination(player.position);
 
-                agent.SetDestination(player.position);
+                }
+
             }
             else
             {
-
+                FollowingPlayer = false;
                 if (timer >= wanderTimer)
                 {
                     Vector3 newPos = RandomNavSphere(VisionPos.position, wanderRadius, -1);
@@ -70,15 +80,38 @@ public class PruebaIAEnemigo : MonoBehaviour
 
     public void SoundCheck(Vector3 pos)
     {
-        SoundWander = true;
-        Debug.Log("escuché eso viejo");
-        agent.SetDestination(pos);
-        StartCoroutine(SoundWanderCd());
+        if(!FollowingPlayer)
+        {
+            SoundWander = true;
+            Debug.Log("escuché eso viejo");
+            agent.SetDestination(pos);
+            StartCoroutine(SoundWanderCd());
+        }
+       
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Player"))
+        {
+            plRB = other.GetComponent<Rigidbody>();
+            healtPlayer = other.GetComponent<Health>();
+            healtPlayer.TakeDMG();
+            plRB.AddForce(transform.forward * 300f, ForceMode.Impulse);
+            agent.SetDestination(transform.position);
+            FollowingPlayer = false;
+            PlayerCooldown = true;
+            StartCoroutine(LosePlayer());
+        }
+    }
     IEnumerator SoundWanderCd()
     {
         yield return new WaitForSeconds(4f);
         SoundWander =false;
+    }
+    IEnumerator LosePlayer()
+    {
+        yield return new WaitForSeconds(4f);
+        PlayerCooldown = false;
     }
 }
