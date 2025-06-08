@@ -14,6 +14,7 @@ public class Engranaje : MonoBehaviour
 
     private void Awake()
     {
+        Llave.SetActive(false);
         rb = EngranajeCorrecto.GetComponent<Rigidbody>();
         animatorEngranaje = EngranajeCorrecto.GetComponent<Animator>();
         animatorEngranaje.enabled = false;
@@ -36,6 +37,7 @@ public class Engranaje : MonoBehaviour
             yaPegado = true;
             animatorEngranaje.enabled = true;
             animatorEngranaje.SetTrigger("rotar");
+            Llave.SetActive(true);
             //animatorPuerta.SetTrigger("abrir");
             animatorEngranaje2.SetTrigger("rotar");
             animatorEngranaje3.SetTrigger("rotar");
