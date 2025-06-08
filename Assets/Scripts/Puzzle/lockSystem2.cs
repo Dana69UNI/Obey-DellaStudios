@@ -18,16 +18,23 @@ public class lockSystem2 : MonoBehaviour
 
     [field: Header("Puerta a desbloquear")]
     [field: SerializeField] public GameObject Puerta2 { get; private set; }
+    [field: Header("Puerta a desbloquear")]
+    [field: SerializeField] public GameObject PuertaTaquilla { get; private set; }
 
     Rigidbody wrongRB;
+    public bool Taquilla;
 
     private doorUnlocker desbloqueaPuerta;
     private doorUnlocker desbloqueaPuerta2;
 
     private void Start()
     {
-        desbloqueaPuerta = Puerta.GetComponent<doorUnlocker>();
-        desbloqueaPuerta2 = Puerta2.GetComponent<doorUnlocker>();
+        if (desbloqueaPuerta != null)
+        {
+
+            desbloqueaPuerta = Puerta.GetComponent<doorUnlocker>();
+            desbloqueaPuerta2 = Puerta2.GetComponent<doorUnlocker>();
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -35,6 +42,11 @@ public class lockSystem2 : MonoBehaviour
         if (other.gameObject == KeyItem)
         {
             Destroy(KeyItem);
+            if(Taquilla)
+            {
+                Destroy(PuertaTaquilla);
+
+            }
             if (Puerta != null)
             {
                 desbloqueaPuerta.DoorUnlock();
