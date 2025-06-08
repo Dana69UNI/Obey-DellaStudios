@@ -17248,7 +17248,7 @@ Transform:
   m_GameObject: {fileID: 388234192}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 21.72, y: 12.650888, z: 99.74578}
+  m_LocalPosition: {x: 25.18, y: 12.650888, z: 99.58}
   m_LocalScale: {x: 1, y: 1, z: 3.3802}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -35640,7 +35640,7 @@ PrefabInstance:
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9623989
+      value: 0.89049065
       objectReference: {fileID: 0}
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
@@ -35655,7 +35655,7 @@ PrefabInstance:
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.22
+      value: 11.23
       objectReference: {fileID: 0}
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
@@ -35711,6 +35711,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PuertaEmpty SALA4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667250122439924916, guid: d0e8308e725653e4b86160bd54520851,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 30.12
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667250122439924916, guid: d0e8308e725653e4b86160bd54520851,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 4.56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -36093,7 +36103,7 @@ PrefabInstance:
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.9623989
+      value: 0.89049065
       objectReference: {fileID: 0}
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
@@ -36108,7 +36118,7 @@ PrefabInstance:
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 11.22
+      value: 11.23
       objectReference: {fileID: 0}
     - target: {fileID: 2009928480712043125, guid: d0e8308e725653e4b86160bd54520851,
         type: 3}
@@ -36154,6 +36164,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: PuertaEmptySala4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667250122439924916, guid: d0e8308e725653e4b86160bd54520851,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8667250122439924916, guid: d0e8308e725653e4b86160bd54520851,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.04
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
