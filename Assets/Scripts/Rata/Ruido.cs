@@ -12,11 +12,11 @@ public class Ruido : MonoBehaviour
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Ruiditoo = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.ObjetoHitSuelo, gameObject.transform);
+        
     }
     void OnCollisionEnter(Collision collision)
     {
-
+        Ruiditoo = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.ObjetoHitSuelo, gameObject.transform);
         if (collision.relativeVelocity.magnitude > 4f)
         {
             Ruiditoo.start();

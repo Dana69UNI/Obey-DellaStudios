@@ -23,7 +23,7 @@ public class TriggerSusurro : MonoBehaviour
         {
             Susurramen = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.pasosLejanos, gameObject.transform);
         }
-        else
+        if(Susurro)
         {
             Susurramen = AudioManager.instance.CreateInstance(FMODEvents.instance.Susurro);
         }

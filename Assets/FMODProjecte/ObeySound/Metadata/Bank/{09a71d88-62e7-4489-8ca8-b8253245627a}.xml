@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="Bank" id="{09a71d88-62e7-4489-8ca8-b8253245627a}">
+		<property name="name">
+			<value>Cinematix</value>
+		</property>
+		<relationship name="folder">
+			<destination>{7098fc8b-c5e6-41ad-8d37-f9e93cf03f48}</destination>
+		</relationship>
+	</object>
+</objects>

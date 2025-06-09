@@ -26448,6 +26448,7 @@ MonoBehaviour:
   EngranajeCorrecto: {fileID: 423809710}
   Llave: {fileID: 125205762}
   puzzleFinalManager: {fileID: 1973951461}
+  yaPegado: 0
 --- !u!65 &495287012
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -27072,7 +27073,7 @@ Transform:
   m_GameObject: {fileID: 508539399}
   serializedVersion: 2
   m_LocalRotation: {x: 0.7787796, y: 0.5601039, z: 0.22931568, w: 0.16492526}
-  m_LocalPosition: {x: 65.61, y: -3.9099998, z: 21.61}
+  m_LocalPosition: {x: 66.94, y: -3.9099998, z: 19.65}
   m_LocalScale: {x: 604.6332, y: 174.60638, z: 604.6332}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -27251,7 +27252,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 742d980f10f3de442b452e63a7b3d5b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radioRuido: 10
+  radioRuido: 1
 --- !u!1 &513330523 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4454528714613031890, guid: f7da71889bdf0a84eb7ad749ce1c192d,
@@ -33438,6 +33439,7 @@ MonoBehaviour:
   EngranajeCorrecto: {fileID: 636154709}
   Llave: {fileID: 125205762}
   puzzleFinalManager: {fileID: 1973951461}
+  yaPegado: 0
 --- !u!1001 &647092187
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -34463,6 +34465,7 @@ MonoBehaviour:
   EngranajeCorrecto: {fileID: 508539399}
   Llave: {fileID: 125205762}
   puzzleFinalManager: {fileID: 1973951461}
+  yaPegado: 0
 --- !u!1 &663019041 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6560175712845502142, guid: 6e9f133663e84f1498313b0e5ea3f695,
@@ -37950,6 +37953,7 @@ MonoBehaviour:
   EngranajeCorrecto: {fileID: 1563877831754865651}
   Llave: {fileID: 125205762}
   puzzleFinalManager: {fileID: 0}
+  yaPegado: 0
 --- !u!1001 &738233602
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -44569,6 +44573,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: CharacterWHOLE
+      objectReference: {fileID: 0}
+    - target: {fileID: 5493727519529221845, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
+        type: 3}
+      propertyPath: dialogos.Array.data[0]
+      value: Estas vias llevan meses fuera de servicio...
       objectReference: {fileID: 0}
     - target: {fileID: 8476942917728764035, guid: 6f2c5ed3ead64dd49a1ed12acfb449bd,
         type: 3}
@@ -90910,6 +90919,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   totalEngranajes: 3
+  eng1: {fileID: 495287011}
+  eng2: {fileID: 646628761}
+  eng3: {fileID: 656059551}
 --- !u!1 &1976866126 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6560175712845502142, guid: 6e9f133663e84f1498313b0e5ea3f695,
@@ -95996,6 +96008,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 6223591472816805687, guid: ea5429bff24404d428a03c7423325f36,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -99713,156 +99730,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <music>k__BackingField.Path
-      value: event:/MusicaaMetro
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <Susurro>k__BackingField.Path
-      value: event:/SusurroEvent
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <HollowTube>k__BackingField.Path
-      value: event:/HollowTube
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data1
-      value: -1030743721
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data2
-      value: 1160330712
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data3
-      value: 69321886
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <music>k__BackingField.Guid.Data4
-      value: -1459514721
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <playerSteps>k__BackingField.Path
-      value: event:/PasosPersonaje
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <pasosLejanos>k__BackingField.Path
-      value: event:/Pasos Lejos
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <Susurro>k__BackingField.Guid.Data1
-      value: 352485882
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <Susurro>k__BackingField.Guid.Data2
-      value: 1312631163
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <Susurro>k__BackingField.Guid.Data3
-      value: -99762022
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <Susurro>k__BackingField.Guid.Data4
-      value: -1902826416
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <ObjetoHitSuelo>k__BackingField.Path
-      value: event:/GolpeObjeto
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <HollowTube>k__BackingField.Guid.Data1
-      value: -2135511832
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <HollowTube>k__BackingField.Guid.Data2
-      value: 1118723261
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <HollowTube>k__BackingField.Guid.Data3
-      value: -936883531
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <HollowTube>k__BackingField.Guid.Data4
-      value: -514863338
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <playerSteps>k__BackingField.Guid.Data1
-      value: -705820306
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <playerSteps>k__BackingField.Guid.Data2
-      value: 1307769025
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <playerSteps>k__BackingField.Guid.Data3
-      value: 1588286130
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <playerSteps>k__BackingField.Guid.Data4
-      value: 244636032
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <pasosLejanos>k__BackingField.Guid.Data1
-      value: 1115702129
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <pasosLejanos>k__BackingField.Guid.Data2
-      value: 1225951370
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <pasosLejanos>k__BackingField.Guid.Data3
-      value: 716795832
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <pasosLejanos>k__BackingField.Guid.Data4
-      value: -1486521760
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <ObjetoHitSuelo>k__BackingField.Guid.Data1
-      value: -270718033
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <ObjetoHitSuelo>k__BackingField.Guid.Data2
-      value: 1307830251
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <ObjetoHitSuelo>k__BackingField.Guid.Data3
-      value: 1577811110
-      objectReference: {fileID: 0}
-    - target: {fileID: 3296715433944640068, guid: 501ceadc0f44380448ecb26e5c0a3d92,
-        type: 3}
-      propertyPath: <ObjetoHitSuelo>k__BackingField.Guid.Data4
-      value: -337672688
-      objectReference: {fileID: 0}
     - target: {fileID: 3499505796395223283, guid: 501ceadc0f44380448ecb26e5c0a3d92,
         type: 3}
       propertyPath: m_LocalPosition.x

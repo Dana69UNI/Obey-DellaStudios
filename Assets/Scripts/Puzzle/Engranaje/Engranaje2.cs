@@ -12,7 +12,7 @@ public class Engranaje2 : MonoBehaviour
     public PuzzleFinalManager puzzleFinalManager;
 
     private Rigidbody rb;
-    private bool yaPegado = false;
+    public bool yaPegado = false;
 
     private void Awake()
     {

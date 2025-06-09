@@ -9,10 +9,11 @@ public class Engranaje3 : MonoBehaviour
     public GameObject EngranajeCorrecto;
     public GameObject Llave;
 
+
     public PuzzleFinalManager puzzleFinalManager;
 
     private Rigidbody rb;
-    private bool yaPegado = false;
+    public bool yaPegado = false;
 
     private void Awake()
     {

@@ -9,10 +9,10 @@ public class Intro2Cinematica1 : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-            Destroy(Personaje);
 
-            SceneManager.LoadScene(3);
+        //Destroy(Personaje);
+
+        SceneManager.LoadScene(3);
         
     }
 }
