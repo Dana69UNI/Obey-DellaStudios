@@ -22,6 +22,10 @@ public class CambioEscena : MonoBehaviour
         {
             StartCoroutine(EsperarLecturaIntro1());
         }
+        if (IndiceEscena == 6)
+        {
+            StartCoroutine(EsperarTrailer());
+        }
     }
 
     IEnumerator EsperarCinematica()
@@ -33,6 +37,12 @@ public class CambioEscena : MonoBehaviour
     IEnumerator EsperarLecturaIntro1()
     {
         yield return new WaitForSeconds(6f);
+        SceneManager.LoadScene(IndiceEscenaDeseada);
+    }
+
+    IEnumerator EsperarTrailer()
+    {
+        yield return new WaitForSeconds(44f);
         SceneManager.LoadScene(IndiceEscenaDeseada);
     }
 

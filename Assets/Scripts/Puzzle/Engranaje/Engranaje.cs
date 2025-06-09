@@ -39,7 +39,11 @@ public class Engranaje : MonoBehaviour
             yaPegado = true;
             animatorEngranaje.enabled = true;
             animatorEngranaje.SetTrigger("rotar");
-            Llave.SetActive(true);
+            if(Llave!=null)
+            {
+                Llave.SetActive(true);
+            }
+            
             //animatorPuerta.SetTrigger("abrir");
             animatorEngranaje2.SetTrigger("rotar");
             animatorEngranaje3.SetTrigger("rotar");

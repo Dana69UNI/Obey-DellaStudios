@@ -24,8 +24,8 @@ EditorBuildSettings:
     path: Assets/Scenes/NivelUno.unity
     guid: 889fd5a178c64bb4ba6a270bbaae11c5
   - enabled: 1
-    path: "Assets/Scenes/Animaciones/Animaci\xF3nFinal.unity"
-    guid: 1f8f6ea7a760d9d4bb97b717070743fe
+    path: Assets/Scenes/UI/TrailerPostFinish.unity
+    guid: 93b75be34f2f9cc4ca28ad7f9cf84650
   - enabled: 1
     path: Assets/Scenes/UI/INTROJUEGO.unity
     guid: 35fcf4cc707d24c4e923200d028a5b8a
