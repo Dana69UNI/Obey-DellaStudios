@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{b5e4f681-f86d-4a7e-920a-1760043f438d}">
+		<property name="assetPath">
+			<value>MUSICASUBWAYPROP1.wav</value>
+		</property>
+		<property name="isStreaming">
+			<value>true</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>49</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{65450b8f-8c66-4953-a660-577e9defed4c}</destination>
+		</relationship>
+	</object>
+</objects>

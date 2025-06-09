@@ -1,3 +1,4 @@
+using FMOD.Studio;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,16 +6,24 @@ using UnityEngine;
 public class Ruido : MonoBehaviour
 {
     public float radioRuido = 10f;
+    private EventInstance Ruiditoo;
     private PruebaIAEnemigo enemigoIa;
     private Rigidbody rb;
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
+        Ruiditoo = AudioManager.instance.CreateEventInstanceObj(FMODEvents.instance.ObjetoHitSuelo, gameObject.transform);
     }
     void OnCollisionEnter(Collision collision)
     {
-        if(!collision.collider.CompareTag("Rata"))
+
+        if (collision.relativeVelocity.magnitude > 4f)
         {
+            Ruiditoo.start();
+        }
+            if (!collision.collider.CompareTag("Rata"))
+        {
+            
             if (collision.relativeVelocity.magnitude > 12f)
             {
                 EmitirRuido();

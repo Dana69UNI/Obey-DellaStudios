@@ -1,5 +1,113 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8467608656272749301
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Pasos Lejos
+  m_EditorClassIdentifier: 
+  Path: event:/Pasos Lejos
+  Guid:
+    Data1: 1115702129
+    Data2: 1225951370
+    Data3: 716795832
+    Data4: -1486521760
+  Banks:
+  - {fileID: -115924459885796760}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3857
+--- !u!114 &-4437332476380444330
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/PasosPersonaje
+  m_EditorClassIdentifier: 
+  Path: event:/PasosPersonaje
+  Guid:
+    Data1: -705820306
+    Data2: 1307769025
+    Data3: 1588286130
+    Data4: 244636032
+  Banks:
+  - {fileID: -115924459885796760}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1000
+--- !u!114 &-4362475745370081315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/HollowTube
+  m_EditorClassIdentifier: 
+  Path: event:/HollowTube
+  Guid:
+    Data1: -2135511832
+    Data2: 1118723261
+    Data3: -936883531
+    Data4: -514863338
+  Banks:
+  - {fileID: -115924459885796760}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 23000
+--- !u!114 &-3899201534602782961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/SusurroEvent
+  m_EditorClassIdentifier: 
+  Path: event:/SusurroEvent
+  Guid:
+    Data1: 352485882
+    Data2: 1312631163
+    Data3: -99762022
+    Data4: -1902826416
+  Banks:
+  - {fileID: -115924459885796760}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 6060
 --- !u!114 &-2559549510920168914
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15,10 +123,30 @@ MonoBehaviour:
   Path: Assets/FMODProjecte/ObeySound/Build/Desktop/Master.strings.bank
   Name: Master.strings
   StudioPath: bank:/Master.strings
-  lastModified: 638850875692254003
+  lastModified: 638850935152706409
   FileSizes:
   - Name: Desktop
-    Value: 712
+    Value: 1086
+  Exists: 1
+--- !u!114 &-115924459885796760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODProjecte/ObeySound/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638850954273279067
+  FileSizes:
+  - Name: Desktop
+    Value: 233760
   Exists: 1
 --- !u!114 &11400000
 MonoBehaviour:
@@ -35,13 +163,21 @@ MonoBehaviour:
   EditorBanks:
   - {fileID: -2559549510920168914}
   - {fileID: 697221612953557216}
-  EditorEvents: []
+  - {fileID: 1502494699953234048}
+  - {fileID: -115924459885796760}
+  EditorEvents:
+  - {fileID: 4106488399741255975}
+  - {fileID: -4437332476380444330}
+  - {fileID: -8467608656272749301}
+  - {fileID: 2798989048462895500}
+  - {fileID: -4362475745370081315}
+  - {fileID: -3899201534602782961}
   EditorParameters: []
   MasterBanks:
   - {fileID: 697221612953557216}
   StringsBanks:
   - {fileID: -2559549510920168914}
-  cacheTime: 638850875692254003
+  cacheTime: 638850954273279067
   cacheVersion: 131621
 --- !u!114 &697221612953557216
 MonoBehaviour:
@@ -58,8 +194,82 @@ MonoBehaviour:
   Path: Assets/FMODProjecte/ObeySound/Build/Desktop/Master.bank
   Name: Master
   StudioPath: bank:/Master
-  lastModified: 638850875692214115
+  lastModified: 638850935152686465
   FileSizes:
   - Name: Desktop
     Value: 1036
   Exists: 1
+--- !u!114 &1502494699953234048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/MUSIC.bank
+  m_EditorClassIdentifier: 
+  Path: Assets/FMODProjecte/ObeySound/Build/Desktop/MUSIC.bank
+  Name: MUSIC
+  StudioPath: bank:/MUSIC
+  lastModified: 638850935152921340
+  FileSizes:
+  - Name: Desktop
+    Value: 476192
+  Exists: 1
+--- !u!114 &2798989048462895500
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/GolpeObjeto
+  m_EditorClassIdentifier: 
+  Path: event:/GolpeObjeto
+  Guid:
+    Data1: -270718033
+    Data2: 1307830251
+    Data3: 1577811110
+    Data4: -337672688
+  Banks:
+  - {fileID: -115924459885796760}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 500
+--- !u!114 &4106488399741255975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/MusicaaMetro
+  m_EditorClassIdentifier: 
+  Path: event:/MusicaaMetro
+  Guid:
+    Data1: -1030743721
+    Data2: 1160330712
+    Data3: 69321886
+    Data4: -1459514721
+  Banks:
+  - {fileID: 1502494699953234048}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 49000

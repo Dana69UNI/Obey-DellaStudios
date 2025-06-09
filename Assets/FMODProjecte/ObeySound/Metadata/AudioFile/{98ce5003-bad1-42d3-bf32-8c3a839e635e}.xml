@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.02.02.00">
+	<object class="AudioFile" id="{98ce5003-bad1-42d3-bf32-8c3a839e635e}">
+		<property name="assetPath">
+			<value>StepOBEY3.mp3</value>
+		</property>
+		<property name="frequencyInKHz">
+			<value>44.0999985</value>
+		</property>
+		<property name="channelCount">
+			<value>2</value>
+		</property>
+		<property name="length">
+			<value>0.60081632653061223</value>
+		</property>
+		<relationship name="masterAssetFolder">
+			<destination>{65450b8f-8c66-4953-a660-577e9defed4c}</destination>
+		</relationship>
+	</object>
+</objects>
