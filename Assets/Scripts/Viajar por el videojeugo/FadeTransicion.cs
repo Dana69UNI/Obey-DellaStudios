@@ -21,7 +21,7 @@ public class FadeTransicion : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(7);
     }
 }
 
